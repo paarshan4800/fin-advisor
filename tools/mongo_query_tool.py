@@ -1,180 +1,108 @@
+# Tool
 from langchain.tools import Tool
 from langchain.pydantic_v1 import BaseModel
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any
 from datetime import datetime
 from db.connection import mongo_conn
 from utils.logger import setup_logger
+import json
+from bson import json_util, ObjectId, Decimal128
+import copy
 
 logger = setup_logger(__name__)
 
+def _clean_for_json(doc: Dict[str, Any]) -> Dict[str, Any]:
+    # Convert Mongo types to JSON-safe primitives
+    out = {}
+    for k, v in doc.items():
+        if isinstance(v, datetime):
+            out[k] = v.isoformat()
+        elif isinstance(v, ObjectId):
+            out[k] = str(v)
+        elif isinstance(v, Decimal128):
+            out[k] = float(v.to_decimal())
+        elif isinstance(v, dict):
+            out[k] = _clean_for_json(v)
+        elif isinstance(v, list):
+            out[k] = [_clean_for_json(x) if isinstance(x, dict) else x for x in v]
+        else:
+            out[k] = v
+    return out
+
 class MongoQueryTool(BaseModel):
-    """Tool for querying MongoDB collections"""
-    
+    """Tool for querying MongoDB transactions using structured filters"""
+
     name: str = "mongo_query_tool"
-    description: str = "Executes MongoDB queries and aggregations on financial data"
-    
-    def _run(self, query_params: str) -> Dict[str, Any]:
-        """Execute MongoDB query based on parameters"""
-        logger.info(f"Executing MongoDB query with params: {query_params}")
-        
+    description: str = (
+        "Fetches transactions from MongoDB using structured filters. "
+        "The input should be a valid MongoDB query object. "
+        "For date filtering, use the 'initiated_at' field with $gte and $lt."
+    )
+
+    def _run(self, query_filter: Any) -> Dict[str, Any]:
+        """Execute MongoDB query using provided filter"""
+        logger.info(f"Running MongoDB query with filter: {query_filter}")
+
         try:
+            # Parse string input to dict if needed
+            if isinstance(query_filter, str):
+                query_filter = json.loads(query_filter)
+
+            mongo_query_filter = copy.deepcopy(query_filter)
+
+            # Convert ISO strings in `initiated_at` to actual datetime objects
+            if "initiated_at" in mongo_query_filter:
+                initiated = mongo_query_filter["initiated_at"]
+                mongo_query_filter["initiated_at"] = {
+                    k: datetime.fromisoformat(v)
+                    for k, v in initiated.items()
+                }
+
             db = mongo_conn.connect()
-            
-            # Parse query parameters (in real implementation, use LLM to parse)
-            # For demo, implementing common query patterns
-            
-            if "spending by category" in query_params.lower():
-                return self._get_spending_by_category(db, query_params)
-            elif "transactions to" in query_params.lower():
-                return self._get_transactions_to_person(db, query_params)
-            elif "total spending" in query_params.lower():
-                return self._get_total_spending(db, query_params)
-            else:
-                return self._get_recent_transactions(db, query_params)
-                
+            collection = db.transactions
+
+            projection = {
+                "_id": 0,
+                "transaction_id": 1,
+                "merchant_id": 1,
+                "amount": 1,
+                "currency": 1,
+                "transaction_type": 1,
+                "transaction_mode": 1,
+                "status": 1,
+                "initiated_at": 1,
+                "remarks": 1,
+                "description": 1
+            }
+
+            # Run the dynamic query
+            results = list(collection.find(mongo_query_filter, projection).sort("initiated_at", -1).limit(10))
+
+            total_amount = sum(t.get("amount", 0) for t in results)
+            transaction_count = len(results)
+
+            # Clean for JSON (avoid ObjectId/datetime issues)
+            cleanedResult = [_clean_for_json(r) for r in results]
+
+            logger.info(f"Fetched {transaction_count} transactions for the given filter")
+
+            return {
+                "query_type": "dynamic_filter_query",
+                "query_filter": query_filter,
+                "data": cleanedResult,
+                "total_amount": total_amount,
+                "transaction_count": transaction_count
+            }
+
         except Exception as e:
             logger.error(f"MongoDB query failed: {e}")
-            return {"error": str(e), "data": []}
-    
-    def _get_spending_by_category(self, db, query_params: str) -> Dict[str, Any]:
-        """Get spending aggregated by category"""
-        pipeline = [
-            {
-                "$match": {
-                    "transaction_type": "debit",
-                    "status": {"$in": ["completed", "success"]}
-                }
-            },
-            {
-                "$lookup": {
-                    "from": "merchants",
-                    "localField": "merchant_id",
-                    "foreignField": "_id",
-                    "as": "merchant"
-                }
-            },
-            {
-                "$unwind": "$merchant"
-            },
-            {
-                "$group": {
-                    "_id": "$merchant.category",
-                    "total_amount": {"$sum": "$amount"},
-                    "transaction_count": {"$sum": 1}
-                }
-            },
-            {
-                "$sort": {"total_amount": -1}
-            }
-        ]
-        
-        results = list(db.transactions.aggregate(pipeline))
-        
-        return {
-            "query_type": "spending_by_category",
-            "data": results,
-            "total_categories": len(results)
-        }
-    
-    def _get_transactions_to_person(self, db, query_params: str) -> Dict[str, Any]:
-        """Get transactions to a specific person/merchant"""
-        # Extract person name using simple string matching
-        # In real implementation, use LLM for entity extraction
-        person_name = "John"  # Default for demo
-        
-        pipeline = [
-            {
-                "$lookup": {
-                    "from": "merchants",
-                    "localField": "merchant_id",
-                    "foreignField": "_id", 
-                    "as": "merchant"
-                }
-            },
-            {
-                "$unwind": "$merchant"
-            },
-            {
-                "$match": {
-                    "merchant.name": {"$regex": person_name, "$options": "i"}
-                }
-            },
-            {
-                "$sort": {"initiated_at": -1}
-            }
-        ]
-        
-        results = list(db.transactions.aggregate(pipeline))
-        total_amount = sum(t.get("amount", 0) for t in results)
-        
-        return {
-            "query_type": "transactions_to_person",
-            "person": person_name,
-            "data": results,
-            "total_amount": total_amount,
-            "transaction_count": len(results)
-        }
-    
-    def _get_total_spending(self, db, query_params: str) -> Dict[str, Any]:
-        """Get total spending for a period"""
-        pipeline = [
-            {
-                "$match": {
-                    "transaction_type": "debit",
-                    "status": {"$in": ["completed", "success"]}
-                }
-            },
-            {
-                "$group": {
-                    "_id": None,
-                    "total_amount": {"$sum": "$amount"},
-                    "transaction_count": {"$sum": 1}
-                }
-            }
-        ]
-        
-        results = list(db.transactions.aggregate(pipeline))
-        
-        return {
-            "query_type": "total_spending",
-            "data": results,
-            "total_amount": results[0]["total_amount"] if results else 0
-        }
-    
-    def _get_recent_transactions(self, db, query_params: str) -> Dict[str, Any]:
-        """Get recent transactions"""
-        pipeline = [
-            {
-                "$lookup": {
-                    "from": "merchants",
-                    "localField": "merchant_id",
-                    "foreignField": "_id",
-                    "as": "merchant"
-                }
-            },
-            {
-                "$unwind": "$merchant"
-            },
-            {
-                "$sort": {"initiated_at": -1}
-            },
-            {
-                "$limit": 20
-            }
-        ]
-        
-        results = list(db.transactions.aggregate(pipeline))
-        
-        return {
-            "query_type": "recent_transactions",
-            "data": results,
-            "transaction_count": len(results)
-        }
+            return {"error": str(e), "data": [], "query_filter": query_filter}
+
 
 def get_mongo_query_tool() -> Tool:
     """Create MongoDB query tool"""
     query_tool = MongoQueryTool()
-    
+
     return Tool(
         name=query_tool.name,
         description=query_tool.description,

@@ -8,8 +8,11 @@ from tools.date_extractor import get_date_range_tool
 from tools.mongo_query_tool import get_mongo_query_tool  
 from tools.category_mapper import get_category_mapper_tool
 from tools.chart_data_preparer import get_chart_data_preparer_tool
+from tools.query_filter_extractor import get_query_filter_extractor_tool
 from agents.memory import conversation_memory
 from utils.logger import setup_logger
+from agents.llm import llm
+from utils.json_formatter import _finalize_json
 
 logger = setup_logger(__name__)
 
@@ -17,7 +20,7 @@ class FinanceAgent:
     """Main AI agent for financial queries"""
     
     def __init__(self):
-        self.llm = self._initialize_llm()
+        self.llm = llm
         self.tools = self._get_tools()
         self.agent = self._create_agent()
         self.executor = AgentExecutor(
@@ -25,24 +28,10 @@ class FinanceAgent:
             tools=self.tools,
             verbose=True,
             handle_parsing_errors=True,
-            max_iterations=5
+            max_iterations=5,
+            return_intermediate_steps=True
         )
         logger.info("Finance agent initialized successfully")
-    
-    def _initialize_llm(self):
-        """Initialize LLM based on configuration"""
-        if settings.LLM_PROVIDER == "openai":
-            return ChatOpenAI(
-                model="gpt-3.5-turbo",
-                temperature=0,
-                openai_api_key=settings.OPENAI_API_KEY
-            )
-        else:
-            return ChatOllama(
-                model=settings.OLLAMA_MODEL,
-                base_url=settings.OLLAMA_BASE_URL,
-                temperature=0
-            )
     
     def _get_tools(self) -> List:
         """Get all available tools"""
@@ -50,7 +39,8 @@ class FinanceAgent:
             get_date_range_tool(),
             get_mongo_query_tool(),
             get_category_mapper_tool(),
-            get_chart_data_preparer_tool()
+            get_chart_data_preparer_tool(),
+            get_query_filter_extractor_tool()
         ]
     
     def _create_agent(self):
@@ -60,17 +50,37 @@ class FinanceAgent:
         2. Query financial transaction data
         3. Categorize spending and identify patterns
         4. Prepare data for charts and tables
-        
-        Always provide structured responses with:
+
+        CRITICAL: When you need data or filters, CALL TOOLS instead of writing JSON yourself.
+
+        FINAL ANSWER FORMAT (respond ONLY in valid JSON for the final turn):
         - type: "table" or "chart"
         - chartType: "bar", "line", "pie", or "scatter" (if type is chart)
         - text_summary: Natural language summary
         - data: Formatted data for rendering
-        
-        Use the available tools to gather and process information before responding.
-        Be conversational and helpful in your summaries.
+
+        Tool usage order (adapt as needed):
+        - If the user asks anything about spending/transactions/money sent or otherwise needs data:
+        1. Call `query_filter_extractor` to get filters.
+        2. Call `mongo_query_tool` with those filters to fetch transactions.
+        3. If the user's request implies categorization (e.g., breakdown by category, patterns, recs), call `category_mapper`.
+        4. Call `chart_data_preparer` to produce the FINAL JSON.
+
+        When calling `chart_data_preparer`, you MUST pass:
+        {{
+        "raw_data": <LIST of transaction records from mongo_query_tool>,
+        "preferred_chart": <optional>,
+        "objective": reason for aggregating data,
+        "category_result": <optional; the entire output from category_mapper must be passed if it was used>
+        }}
+
+        Important rules:
+        - Do NOT fabricate data—use tools to get it.
+        - If `mongo_query_tool` returns no rows, return a minimal table with an explanatory text_summary.
+        - Keep summaries conversational but concise.
+        - Do not include any JSON in regular chat/tool-call turns; ONLY the final assistant turn should be JSON.
         """
-        
+
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
             MessagesPlaceholder("chat_history", optional=True),
@@ -105,95 +115,23 @@ class FinanceAgent:
                 "input": user_input,
                 "chat_history": context
             })
-            
-            # Format response
-            formatted_response = self._format_response(result["output"], user_input)
-            
+
+            raw_output = result.get("output")
+            resp = _finalize_json(raw_output)
+
+            print(type(resp))
+            print("resp", resp)
+
             # Store in memory
-            conversation_memory.add_interaction(
-                session_id, 
-                user_input, 
-                formatted_response["text_summary"]
-            )
+            if isinstance(resp, dict) and "text_summary" in resp:
+                conversation_memory.add_interaction(session_id, user_input, resp["text_summary"])
             
-            logger.info(f"Query processed successfully: {formatted_response['type']}")
-            return formatted_response
+            logger.info(f"Query processed successfully: {resp['type']}")
+            return resp
             
         except Exception as e:
             logger.error(f"Error processing query: {e}")
             return self._error_response(str(e))
-    
-    def _format_response(self, agent_output: str, user_input: str) -> Dict[str, Any]:
-        """Format agent output into structured response"""
-        
-        # Determine response type based on query
-        if any(word in user_input.lower() for word in ["chart", "graph", "visual", "show"]):
-            response_type = "chart"
-            chart_type = self._determine_chart_type(user_input)
-        else:
-            response_type = "table" 
-            chart_type = None
-        
-        # Generate sample data based on query type
-        if "category" in user_input.lower() or "categorize" in user_input.lower():
-            data = self._get_category_data()
-            chart_type = "pie" if response_type == "chart" else None
-        elif "spending" in user_input.lower() and "week" in user_input.lower():
-            data = self._get_weekly_spending_data()
-            chart_type = "line" if response_type == "chart" else None
-        else:
-            data = self._get_transaction_data()
-        
-        return {
-            "type": response_type,
-            "chartType": chart_type,
-            "text_summary": agent_output,
-            "data": data
-        }
-    
-    def _determine_chart_type(self, query: str) -> str:
-        """Determine appropriate chart type for query"""
-        if "category" in query.lower() or "breakdown" in query.lower():
-            return "pie"
-        elif "trend" in query.lower() or "over time" in query.lower():
-            return "line"
-        elif "compare" in query.lower():
-            return "bar"
-        else:
-            return "bar"  # default
-    
-    def _get_category_data(self) -> List[Dict[str, Any]]:
-        """Sample category spending data"""
-        return [
-            {"label": "Food & Dining", "value": 15000, "color": "#FF6384"},
-            {"label": "Transportation", "value": 8000, "color": "#36A2EB"},
-            {"label": "Shopping", "value": 12000, "color": "#FFCE56"},
-            {"label": "Utilities", "value": 5000, "color": "#4BC0C0"},
-            {"label": "Entertainment", "value": 3000, "color": "#9966FF"}
-        ]
-    
-    def _get_weekly_spending_data(self) -> List[Dict[str, Any]]:
-        """Sample weekly spending data"""
-        return [
-            {"date": "2024-01-01", "amount": 5000},
-            {"date": "2024-01-02", "amount": 7000},
-            {"date": "2024-01-03", "amount": 4500},
-            {"date": "2024-01-04", "amount": 8000},
-            {"date": "2024-01-05", "amount": 6200},
-            {"date": "2024-01-06", "amount": 9100},
-            {"date": "2024-01-07", "amount": 5800}
-        ]
-    
-    def _get_transaction_data(self) -> List[List[Any]]:
-        """Sample transaction table data"""
-        return [
-            ["Date", "Description", "Category", "Amount"],
-            ["2024-01-01", "Restaurant expense", "Food & Dining", 2500],
-            ["2024-01-02", "Uber ride", "Transportation", 450],
-            ["2024-01-03", "Grocery shopping", "Food & Dining", 3200],
-            ["2024-01-04", "Electric bill", "Utilities", 1200],
-            ["2024-01-05", "Movie tickets", "Entertainment", 800]
-        ]
     
     def _error_response(self, error_message: str) -> Dict[str, Any]:
         """Format error response"""

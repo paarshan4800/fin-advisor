@@ -1,56 +1,69 @@
-from langchain.tools import Tool
-from langchain.pydantic_v1 import BaseModel
-from typing import Dict, Any, List
+from langchain.tools import StructuredTool
+from langchain.pydantic_v1 import BaseModel, Field
+from typing import Dict, Any, List, Union
 from utils.logger import setup_logger
+from agents.llm import llm
+import json
 
 logger = setup_logger(__name__)
 
-class CategoryMapper(BaseModel):
-    """Tool for mapping and analyzing spending categories"""
-    
-    name: str = "category_mapper"
-    description: str = "Maps transactions to spending categories and identifies patterns"
-    
-    def _run(self, transaction_data: str) -> Dict[str, Any]:
-        """Analyze and map transaction categories"""
-        logger.info("Mapping transaction categories")
+class CategoryMapperInput(BaseModel):
+    transaction_data: Union[str, List[Dict[str, Any]], Dict[str, Any]] = Field(
+        ...,
+        description=(
+            "User's transactions data as a list of dicts (preferred) or JSON string."
+            "Should contain details like merchant, description, amount, date, etc."
+        )
+    )
+
+def _map_categories(transaction_data: Union[str, List[Dict[str, Any]], Dict[str, Any]]) -> Dict[str, Any]:
+    """Tool for mapping and analyzing spending categories using LLM"""
+
+    logger.info("Calling LLM to map transaction categories")
+
+    if isinstance(transaction_data, str):
+        transaction_data = json.loads(transaction_data)
+
+    prompt = (
+        f"""You are a finance assistant. Analyze the user's transaction data.
+        1. Categorize transactions (Food, Shopping, Utilities, etc.)
+        2. Identify unnecessary spending patterns
+        3. Suggest recommendations to save money
         
-        # In real implementation, this would use LLM to categorize
-        # For demo, using predefined category mapping
-        
-        category_suggestions = {
-            "Food & Dining": ["restaurant", "food", "cafe", "dining"],
-            "Transportation": ["uber", "taxi", "gas", "fuel", "transport"],
-            "Shopping": ["store", "shop", "retail", "amazon"],
-            "Utilities": ["electric", "water", "internet", "phone", "mobile"],
-            "Entertainment": ["movie", "game", "streaming", "music"],
-            "Healthcare": ["hospital", "doctor", "pharmacy", "medical"],
-            "Education": ["course", "book", "school", "university"]
-        }
-        
-        unnecessary_spending_patterns = [
-            "Multiple transactions to same restaurant in a day",
-            "High-frequency small purchases",
-            "Subscriptions for unused services",
-            "Impulse shopping patterns"
-        ]
-        
+        Return output ONLY as a valid JSON object with keys:
+        {{
+            "category_mapping": {{
+                "<Category>": ["Merchant/Description", ...]
+                }},
+            "unnecessary_patterns": ["..."],
+            "recommendations": ["..."]
+        }}
+        Here is the transaction data (JSON): {transaction_data}
+        CRITICAL: Respond ONLY with a single JSON object. No code fences or prose.
+        """
+    )
+
+    try:
+        response = llm.invoke(prompt)
+        logger.debug(f"LLM raw response: {response.content}")
+        return json.loads(response.content)
+    except Exception as e:
+        logger.error(f"LLM category mapping failed: {e}")
         return {
-            "category_mapping": category_suggestions,
-            "unnecessary_patterns": unnecessary_spending_patterns,
-            "recommendations": [
-                "Set daily spending limits for dining",
-                "Review and cancel unused subscriptions",
-                "Use budgeting apps for impulse control"
-            ]
+            "category_mapping": {},
+            "unnecessary_patterns": [],
+            "recommendations": [],
+            "error": str(e)
         }
 
-def get_category_mapper_tool() -> Tool:
+
+def get_category_mapper_tool() -> StructuredTool:
     """Create category mapping tool"""
-    mapper = CategoryMapper()
-    
-    return Tool(
-        name=mapper.name,
-        description=mapper.description,
-        func=mapper._run
+
+    return StructuredTool.from_function(
+        name="category_mapper",
+        description="Uses LLM to analyze transactions, categorize them, identify unnecessary spending patterns, and suggest budget improvements.",
+        func=_map_categories,
+        args_schema=CategoryMapperInput,
+        return_direct=False,
     )
