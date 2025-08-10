@@ -1,5 +1,5 @@
 from langchain.tools import StructuredTool
-from langchain.pydantic_v1 import BaseModel, Field
+from pydantic import BaseModel, Field
 from typing import Dict, Any, Optional
 from datetime import datetime
 from utils.logger import setup_logger

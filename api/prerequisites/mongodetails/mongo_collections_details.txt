@@ -1,0 +1,68 @@
+{
+    "collection": "accounts",
+    "sample_document": {
+        "_id": "fdbe4ea8-1be4-43fb-b459-4931ca783728",
+        "user_id": "54eddc7a-8fe2-4b5d-afb4-65cb3f621de8",
+        "account_number": "GB67FKVV01620372128635",
+        "created_at": "2025-07-30 23:22:20.540000",
+        "updated_at": "2025-07-30 23:22:20.540000"
+    }
+}
+
+---
+
+{
+    "collection": "merchants",
+    "sample_document": {
+        "_id": "b4883869-9963-43e6-af78-1c88a839ef5e",
+        "name": "Moran, Landry and Conley Mobile Recharge",
+        "type": "Mobile Recharge",
+        "category": "Utilities",
+        "created_at": "2025-07-30 17:52:20.563000",
+        "updated_at": "2025-07-30 17:52:20.563000"
+    }
+}
+
+---
+
+{
+    "collection": "transactions",
+    "sample_document": {
+        "_id": "4823ceea-958a-431b-b64a-c5a70921f195",
+        "transaction_id": "664593b6-c92d-4893-830e-10bdf9938c2e",
+        "user_id": "66d3474e-13fe-4a0c-b4b3-088b3e19c9f9",
+        "from_account_id": "45d781b2-b36d-437c-9131-03971830613d",
+        "to_account_id": null,
+        "merchant_id": "be8c3eb7-fed7-42b2-9eff-93e83ab0f01b",
+        "amount": 2557.32,
+        "currency": "INR",
+        "transaction_type": "debit",
+        "transaction_mode": "Cash",
+        "status": "refunded",
+        "initiated_at": "2024-09-12 07:10:05.680000",
+        "completed_at": "2024-09-12 07:33:05.680000",
+        "failed_at": null,
+        "remarks": "Restaurant expense",
+        "description": "Payment to Ward-Rose Restaurant",
+        "reference_number": "688a5bd4afb9d106698f4765",
+        "order_id": "ece8d334-08ff-4b04-804a-e6683176d940",
+        "created_at": "2024-09-12 07:10:05.680000",
+        "updated_at": "2025-07-30 23:22:20.625000"
+    }
+}
+
+---
+
+{
+    "collection": "users",
+    "sample_document": {
+        "_id": "54eddc7a-8fe2-4b5d-afb4-65cb3f621de8",
+        "name": "Brett Cline",
+        "email": "jonathanboyer@example.com",
+        "created_at": "2025-07-30 23:22:20.510000",
+        "updated_at": "2025-07-30 23:22:20.510000"
+    }
+}
+
+---
+

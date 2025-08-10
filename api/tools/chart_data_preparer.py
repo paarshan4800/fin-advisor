@@ -1,9 +1,10 @@
 from langchain.tools import StructuredTool
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 from typing import Dict, Any, List, Optional, Literal, Union
 from utils.logger import setup_logger
 from agents.llm import llm
 import json
+from utils.helper import _coerce_transactions, _load_data_from_handle
 
 logger = setup_logger(__name__)
 
@@ -56,11 +57,16 @@ class VisualizationRouter(BaseModel):
     visualization: ChartOrTableResult = Field(..., description="The single chart or table object to be rendered.")
 
 class ChartDataInput(BaseModel):
-    raw_data: List[Dict[str, Any]] = Field(
+    handle: Optional[str] = Field(
+        None,
+        description="Handle returned by mongo_query_tool. If provided, data will be loaded from Redis cache."
+    )
+    raw_data: Optional[List[Dict[str, Any]]] = Field(
         ...,
         description=(
-            "The raw query results to visualize. Typically a list of transaction documents, "
+            "(Optional) The raw query results to visualize. Typically a list of transaction documents, "
             "each as a dict with fields like 'initiated_at', 'amount', 'category', 'merchant_name', etc."
+            "It should not be sample data"
         )
     )
     preferred_chart: Optional[str] = Field(
@@ -79,7 +85,15 @@ class ChartDataInput(BaseModel):
         description="Optional: output from category_mapper (category_mapping, unnecessary_patterns, recommendations)."
     )
 
-def _prepare_chart_data(raw_data: List[Dict[str, Any]],
+    @model_validator(mode='after')
+    def validate_input(self):
+        h, td = self.handle, self.raw_data
+        if not h and td is None:
+            raise ValueError("Provide either 'handle' or 'raw_data'.")
+        return self
+
+def _prepare_chart_data(handle: Optional[str] = None,
+                        raw_data: Optional[List[Dict[str, Any]]] = None,
                         preferred_chart: Optional[str] = None,
                         objective: str = None,
                         category_result: Optional[Dict[str, Any]] = None,
@@ -130,6 +144,22 @@ def _prepare_chart_data(raw_data: List[Dict[str, Any]],
     """
     logger.info("Preparing chart data with LLM")
 
+    if handle:
+        data = _load_data_from_handle(handle)
+    else:
+        data = _coerce_transactions(raw_data)
+
+    if not data:
+        return {
+            "category_mapping": {},
+            "unnecessary_patterns": [],
+            "recommendations": [],
+            "note": "No transactions available for analysis."
+        }
+
+    if isinstance(data, str):
+        data = json.loads(data)    
+
     # Build prompt
     preface = (
         "You are a data visualization assistant. "
@@ -161,7 +191,7 @@ def _prepare_chart_data(raw_data: List[Dict[str, Any]],
         Output JSON must match the keys exactly.
 
         Raw data (JSON list of records):
-        {json.dumps(raw_data, ensure_ascii=False)}
+        {json.dumps(data, ensure_ascii=False)}
 
         Remember the allowed shapes and keys exactly as specified above.
     """

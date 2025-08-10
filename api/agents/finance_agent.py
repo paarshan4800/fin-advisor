@@ -13,6 +13,7 @@ from agents.memory import conversation_memory
 from utils.logger import setup_logger
 from agents.llm import llm
 from utils.json_formatter import _finalize_json
+from utils.helper import enhance_response
 
 logger = setup_logger(__name__)
 
@@ -68,7 +69,8 @@ class FinanceAgent:
 
         When calling `chart_data_preparer`, you MUST pass:
         {{
-        "raw_data": <LIST of transaction records from mongo_query_tool>,
+        "handle": Handle returned by mongo_query_tool,
+        "raw_data": <optional LIST of transaction records from mongo_query_tool>,
         "preferred_chart": <optional>,
         "objective": reason for aggregating data,
         "category_result": <optional; the entire output from category_mapper must be passed if it was used>
@@ -116,30 +118,33 @@ class FinanceAgent:
                 "chat_history": context
             })
 
-            raw_output = result.get("output")
-            resp = _finalize_json(raw_output)
+            resp = enhance_response(result)
 
-            print(type(resp))
-            print("resp", resp)
+            # raw_output = result.get("output")
+            # resp = _finalize_json(raw_output)
 
             # Store in memory
-            if isinstance(resp, dict) and "text_summary" in resp:
-                conversation_memory.add_interaction(session_id, user_input, resp["text_summary"])
-            
-            logger.info(f"Query processed successfully: {resp['type']}")
+            if isinstance(resp, dict) and "visualization" in resp and "text_summary" in resp["visualization"]:
+                conversation_memory.add_interaction(session_id, user_input, resp["visualization"]["text_summary"])            
+
+            logger.info(f"Query processed successfully: {resp["visualization"]['type']}")
             return resp
             
         except Exception as e:
             logger.error(f"Error processing query: {e}")
-            return self._error_response(str(e))
+            return self._error_response(str(e), user_input)
     
-    def _error_response(self, error_message: str) -> Dict[str, Any]:
+    def _error_response(self, error_message: str, user_input: str) -> Dict[str, Any]:
         """Format error response"""
         return {
-            "type": "table",
-            "chartType": None,
-            "text_summary": f"I encountered an error processing your request: {error_message}",
-            "data": [],
+            "visualization": {
+                "type": "table",
+                "chartType": None,
+                "text_summary": f"I encountered an error processing your request: {error_message}",
+                "data": [],
+            },
+            "analysis": [],
+            "query": user_input,
             "error": True
         }
 

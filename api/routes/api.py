@@ -3,6 +3,7 @@ from typing import Dict, Any
 from agents.finance_agent import finance_agent
 from utils.response_formatter import ResponseFormatter
 from utils.logger import setup_logger
+from services.transactions import get_transactions
 
 logger = setup_logger(__name__)
 
@@ -42,6 +43,40 @@ def process_financial_query() -> Dict[str, Any]:
         
     except Exception as e:
         logger.error(f"Unexpected error in /query endpoint: {e}")
+        return jsonify(ResponseFormatter.error_response(
+            "Internal server error",
+            str(e)
+        )), 500
+    
+@api_bp.route('/transactions', methods=['POST'])
+def transactions() -> Dict[str, Any]:
+    """Get transactions for the give criteria"""
+    try:
+        # Validate request
+        if not request.json:
+            return jsonify(ResponseFormatter.error_response(
+                "Request body must be JSON"
+            )), 400
+        
+        user_id = request.json.get('userId', 'default')
+        page_size = request.json.get('pageSize', 25)
+        page_number = request.json.get('pageNumber', 1)
+        
+        if not user_id:
+            return jsonify(ResponseFormatter.error_response(
+                "User ID is required"
+            )), 400
+        
+        logger.info(f"Received request for transactions for session: {user_id}")
+        
+        # Process query with AI agent
+        # result = finance_agent.process_query(user_query, session_id)
+        result = get_transactions(user_id, page_size, page_number)
+        
+        return jsonify(ResponseFormatter.success_response(result))
+        
+    except Exception as e:
+        logger.error(f"Unexpected error in /transactions endpoint: {e}")
         return jsonify(ResponseFormatter.error_response(
             "Internal server error",
             str(e)

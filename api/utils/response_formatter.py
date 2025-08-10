@@ -31,5 +31,5 @@ class ResponseFormatter:
     @staticmethod
     def validate_query_response(response: Dict[str, Any]) -> bool:
         """Validate query response structure"""
-        required_fields = ["type", "text_summary", "data"]
+        required_fields = ["visualization", "analysis", "query"]
         return all(field in response for field in required_fields)
