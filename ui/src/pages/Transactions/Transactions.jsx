@@ -1,14 +1,22 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import useTransactions from './useTransactions'
 import { Container, Box, Typography } from "@mui/material";
 import TransactionsTable from "./TransactionsTable";
+import TransactionFilters from './TransactionFilters';
+import { filtersDefaultState } from '../../utils/constants';
 
 function Transactions() {
 
-  const { fetchTransactions, transactionsData } = useTransactions();  
+  const { fetchTransactions, transactionsData, transactionsLoading } = useTransactions();
+
+  const [filters, setFilters] = useState(filtersDefaultState);
+  const [pagination, setPagination] = useState({
+    page: 0,
+    rowsPerPage: 10
+  });
 
   useEffect(() => {
-    fetchTransactions();
+    fetchTransactions(pagination, filters);
   }, [])
 
   return (
@@ -22,7 +30,25 @@ function Transactions() {
         </Typography>
       </Box>
 
-      <TransactionsTable rows={transactionsData.items} totalRecords={transactionsData.total_records} fetchTransactions={fetchTransactions} />
+      <Box sx={{ mb: 3 }}>
+        <TransactionFilters
+          value={filters}
+          onChange={setFilters}
+          onApply={fetchTransactions}   // or wrap to call fetchTransactions(filters)
+          loading={transactionsLoading}
+          pagination={pagination}
+          setPagination={setPagination}
+        />
+      </Box>
+
+      <TransactionsTable
+        rows={transactionsData.items}
+        totalRecords={transactionsData.total_records}
+        fetchTransactions={fetchTransactions}
+        pagination={pagination}
+        setPagination={setPagination}
+        filters={filters}
+      />
     </Container>
   )
 }

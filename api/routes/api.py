@@ -59,19 +59,17 @@ def transactions() -> Dict[str, Any]:
             )), 400
         
         user_id = request.json.get('userId', 'default')
-        page_size = request.json.get('pageSize', 25)
-        page_number = request.json.get('pageNumber', 1)
         
         if not user_id:
             return jsonify(ResponseFormatter.error_response(
                 "User ID is required"
             )), 400
         
+        payload = request.get_json(silent=True, force=True) or {}
+        
         logger.info(f"Received request for transactions for session: {user_id}")
         
-        # Process query with AI agent
-        # result = finance_agent.process_query(user_query, session_id)
-        result = get_transactions(user_id, page_size, page_number)
+        result = get_transactions(user_id, payload)
         
         return jsonify(ResponseFormatter.success_response(result))
         

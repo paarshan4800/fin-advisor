@@ -14,25 +14,20 @@ import {
 import TransactionRow from "./TransactionRow";
 
 
-export default function TransactionsTable({ rows = [], totalRecords, fetchTransactions }) {
+export default function TransactionsTable({ rows = [], totalRecords, fetchTransactions, pagination, setPagination, filters }) {
 
-  const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const { page, rowsPerPage } = pagination
 
-  const handleChangePage = (_e, newPage) => { 
-    setPage(newPage); 
-    fetchTransactions(page + 1, rowsPerPage);
+  const handleChangePage = (_e, newPage) => {
+    setPagination({ ...pagination, page: newPage })
+    fetchTransactions({ page: page, rowsPerPage }, filters);
   }
 
   const handleChangeRowsPerPage = (e) => {
     const newRowsPerPage = parseInt(e.target.value, 10)
-    setRowsPerPage(newRowsPerPage);
-    setPage(0);
-    fetchTransactions(1, newRowsPerPage);
+    setPagination({ page: 0, rowsPerPage: newRowsPerPage })
+    fetchTransactions({ page: 1, rowsPerPage: newRowsPerPage }, filters);
   };
-
-  const sliceStart = page * rowsPerPage;
-  const paged = rows.slice(sliceStart, sliceStart + rowsPerPage);
 
   return (
     <Paper variant="outlined" sx={{ bgcolor: "background.paper" }}>

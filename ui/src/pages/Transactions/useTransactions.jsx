@@ -10,23 +10,28 @@ function useTransactions() {
 
     const TRANSACTIONS_URI = "/transactions"
 
-    const { userId } = useUser()  
+    const { userId } = useUser()
 
     const fetchTransactions = async (
-        pageNumber = 1,
-        pageSize = 10,
+        pagination,
+        filters
     ) => {
 
         settransactionsLoading(true);
 
         try {
             const payload = {
-                "pageNumber": pageNumber,
-                "pageSize": pageSize,
-                "userId": userId
+                "pageNumber": pagination.page + 1,
+                "pageSize": pagination.rowsPerPage,
+                "userId": userId,
+                "fromDate": filters.fromDate,
+                "toDate": filters.toDate,
+                "status": filters.status,
+                "transactionMode": filters.transactionMode,
+                "transactionType": filters.transactionType,
             }
+
             const resp = await api.post(TRANSACTIONS_URI, payload);
-            console.log(resp);
 
             if ("data" in resp.data) {
                 settransactionsData(resp.data.data);
