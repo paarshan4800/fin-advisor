@@ -17,9 +17,9 @@ merchants_collection = db['merchants']
 transactions_collection = db['transactions']
 
 # Configuration
-numberOfRecords = 1000  # Number of transactions to generate
-num_users = max(50, numberOfRecords // 20)  # At least 50 users, or 1 user per 20 transactions
-num_merchants = 500  # Number of merchants
+numberOfRecords = 30000  # Number of transactions to generate
+num_users = max(30, numberOfRecords // 1000)  # At least 50 users, or 1 user per 20 transactions
+num_merchants = 750  # Number of merchants
 
 # Lists for transaction types, modes, statuses, and currencies
 transaction_types = ['credit', 'debit', 'refund']

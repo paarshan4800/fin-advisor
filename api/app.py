@@ -1,9 +1,10 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 from config.settings import settings
 from routes.api import api_bp
 from db.connection import mongo_conn
 from utils.logger import setup_logger
+from utils.context import current_user_id
 import atexit
 
 logger = setup_logger(__name__)
@@ -40,6 +41,18 @@ def create_app() -> Flask:
             }
         }), 500
     
+    @app.before_request
+    def attach_user_id():
+        if request.method == "OPTIONS":
+            return ("", 204)
+        payload = request.json or {}
+        uid = payload.get("userId") or payload.get("session_id")
+        current_user_id.set(uid)
+
+    @app.teardown_request
+    def clear_user_id(exc):
+        current_user_id.set(None)
+
     # Root endpoint
     @app.route('/')
     def index():

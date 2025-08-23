@@ -1,0 +1,6000 @@
+[{
+  "_id": "b4883869-9963-43e6-af78-1c88a839ef5e",
+  "name": "Moran, Landry and Conley Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  }
+},
+{
+  "_id": "bbbbdc08-2d82-4f13-be4c-68b0171e2a90",
+  "name": "Young, Vasquez and Thomas Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  }
+},
+{
+  "_id": "919b13d8-f493-4d9e-9c05-fe61d4d4d682",
+  "name": "Fleming and Sons Online Retail",
+  "type": "Online Retail",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  }
+},
+{
+  "_id": "344647ec-9beb-4d2e-8906-f8d7ffd1acb4",
+  "name": "Bailey-Stephens Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  }
+},
+{
+  "_id": "bf1caae9-9d4e-4bea-9b6b-0be7e68dfe91",
+  "name": "Johnson, Williams and Mccormick Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  }
+},
+{
+  "_id": "d37be4ec-f830-43c1-9650-f04caf0a6366",
+  "name": "Richards LLC Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  }
+},
+{
+  "_id": "92bec5df-3683-4eaf-8297-7a02dd3b8355",
+  "name": "Booth-Hicks Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  }
+},
+{
+  "_id": "323159d4-8b01-4f83-acc4-ec98d9b286c7",
+  "name": "Johnson-Davis Movie Theater",
+  "type": "Movie Theater",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  }
+},
+{
+  "_id": "53423e02-36ae-4391-9e16-31c872f999b0",
+  "name": "Phillips, Gutierrez and Jarvis Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  }
+},
+{
+  "_id": "1c7a947b-32a5-473a-922a-de822c6fc29d",
+  "name": "Cook, Rice and Summers Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.563Z"
+  }
+},
+{
+  "_id": "c649e89e-9348-4aae-92e5-1aa8c4226317",
+  "name": "Wells, Berry and Poole Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  }
+},
+{
+  "_id": "73ae9f74-5d1a-4d9e-a9fd-8107ffedad70",
+  "name": "Newton LLC Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  }
+},
+{
+  "_id": "974de04c-5faa-4ca3-9013-e16526f030ab",
+  "name": "Buck, Lee and Moody Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  }
+},
+{
+  "_id": "1ad7cd7e-196d-4b78-97df-9cefabe2dfba",
+  "name": "Robinson PLC Movie Theater",
+  "type": "Movie Theater",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  }
+},
+{
+  "_id": "892e81c0-ebc3-40d8-8bde-a9e4591c58a5",
+  "name": "Montoya-Lopez Movie Theater",
+  "type": "Movie Theater",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  }
+},
+{
+  "_id": "92eec68d-3a47-4352-97fb-e8f54302795a",
+  "name": "Harrell and Sons Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  }
+},
+{
+  "_id": "a7c7eacd-f624-412f-a051-83b9a642401e",
+  "name": "Liu Group Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  }
+},
+{
+  "_id": "e362973b-e0ef-4d3e-bf66-28ab34f8b153",
+  "name": "Roberts, Jacobs and Mcgee Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  }
+},
+{
+  "_id": "d74b695f-a269-49da-a059-2b5e54fdb830",
+  "name": "Lang-Houston Movie Theater",
+  "type": "Movie Theater",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  }
+},
+{
+  "_id": "111f756a-36a7-4380-9f81-07f45ca35647",
+  "name": "Burnett, Blanchard and Ferguson Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  }
+},
+{
+  "_id": "4d8772a4-d048-49af-a78e-c542c91f6e5f",
+  "name": "Hernandez PLC Bakery",
+  "type": "Bakery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  }
+},
+{
+  "_id": "826357ca-dfa1-4e73-9e7d-7ec2a256d5b2",
+  "name": "Holden-Hill Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  }
+},
+{
+  "_id": "89c0fcb5-fbc7-46fa-8aef-8d20cc931a9f",
+  "name": "Bryant Inc Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  }
+},
+{
+  "_id": "3c49915b-2e95-4dae-92b4-daadd4a2ced4",
+  "name": "Russo, Henderson and Holland Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.564Z"
+  }
+},
+{
+  "_id": "1ed89d47-783d-4bab-8d91-310eabf4aa18",
+  "name": "Williams, Kemp and Knox Electricity Provider",
+  "type": "Electricity Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  }
+},
+{
+  "_id": "9efd5e1e-99c2-409f-a4b1-d5bf61a9d60a",
+  "name": "Thomas-Gonzalez Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  }
+},
+{
+  "_id": "7567b7e8-e416-4243-a4d7-0f51c0178338",
+  "name": "Martinez, Davis and Smith Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  }
+},
+{
+  "_id": "e14dfbe9-e89f-451c-8d0a-50b38924e4b0",
+  "name": "Mitchell Ltd Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  }
+},
+{
+  "_id": "f2dd5301-9166-4b9a-985b-60ff45f1bf09",
+  "name": "Walsh-Floyd Electricity Provider",
+  "type": "Electricity Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  }
+},
+{
+  "_id": "5982c93a-aefc-466d-b742-dc3441982a22",
+  "name": "Griffin-Brooks Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  }
+},
+{
+  "_id": "cd4b46df-aa44-4aa1-a94c-d8f666197a33",
+  "name": "Lewis LLC Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  }
+},
+{
+  "_id": "13251fba-f6ce-4c03-a140-159abebd2dd0",
+  "name": "Banks, Robinson and Lopez Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  }
+},
+{
+  "_id": "47c9f2d5-e2e0-4abe-86c8-b58b53aaa2d0",
+  "name": "Owens LLC Online Retail",
+  "type": "Online Retail",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  }
+},
+{
+  "_id": "057c3a98-5df7-4129-9cad-c4ab289c7936",
+  "name": "Burton-Smith Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  }
+},
+{
+  "_id": "9471e872-017c-402c-bf63-635fdb2db954",
+  "name": "Hatfield, Lamb and Hernandez Electricity Provider",
+  "type": "Electricity Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  }
+},
+{
+  "_id": "a4f52f7b-6eb2-45ae-8c31-15bf8faacd1b",
+  "name": "Torres PLC Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  }
+},
+{
+  "_id": "72e6854d-b1eb-42c0-aca9-975dbfb3b9b0",
+  "name": "Mclaughlin, Lucas and Thomas Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.565Z"
+  }
+},
+{
+  "_id": "14e1a5e8-a009-40bd-8433-61f21e0f8ca3",
+  "name": "Carter-White Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  }
+},
+{
+  "_id": "9137bc75-2ba3-4c70-9854-8067a90a76a3",
+  "name": "Mccann, King and Johnson Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  }
+},
+{
+  "_id": "6332e52d-91c2-4d4f-8072-fc8d254f8696",
+  "name": "Gibson Inc Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  }
+},
+{
+  "_id": "a198bcd3-5f96-413a-92d3-4c88ce838cea",
+  "name": "Hernandez, Clark and Wilson Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  }
+},
+{
+  "_id": "3f385878-58be-4ac0-8bbe-9689ef624672",
+  "name": "Hoffman Ltd Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  }
+},
+{
+  "_id": "e80a8b55-56da-4f74-b613-a493d3c7237a",
+  "name": "Gordon Inc Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  }
+},
+{
+  "_id": "ef686ce4-c719-4f18-930a-4e014c63765f",
+  "name": "Calhoun, Robles and King Online Retail",
+  "type": "Online Retail",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  }
+},
+{
+  "_id": "7540e11f-ffe0-4f97-9edb-126a1d7aff51",
+  "name": "Williams-Carroll Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  }
+},
+{
+  "_id": "fb5d01f1-8714-4f1f-ad45-be4450d41aee",
+  "name": "Leon, Moore and Rodriguez Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  }
+},
+{
+  "_id": "7bc83a8b-a046-45a4-9927-d4f4d820f6a3",
+  "name": "Logan, Cruz and Perkins Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  }
+},
+{
+  "_id": "30846a3c-aa62-4356-af24-621edee650ec",
+  "name": "Griffin, Jennings and Brown Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  }
+},
+{
+  "_id": "e0d1b1d7-65ff-4df0-a4d7-e58dc3190941",
+  "name": "Allen, Cooke and Booth Amusement Park",
+  "type": "Amusement Park",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.566Z"
+  }
+},
+{
+  "_id": "2bae565b-c0a0-4d91-bf3a-5d7c4ff5c2f0",
+  "name": "Johnson, Graham and Bauer Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  }
+},
+{
+  "_id": "4534cf37-3ae5-4ebe-bec7-9e8a90b78998",
+  "name": "Black, Phillips and Roman Amusement Park",
+  "type": "Amusement Park",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  }
+},
+{
+  "_id": "98e18ea1-5688-461e-9728-eb6e66662be7",
+  "name": "Robertson, Stewart and Anderson Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  }
+},
+{
+  "_id": "5bac6f56-d21f-40c7-ab0e-3d0b5fe26cd7",
+  "name": "Adams Group Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  }
+},
+{
+  "_id": "c2accbb8-70b9-42d0-9bd2-5e1b7870846a",
+  "name": "Osborn-Jensen Electricity Provider",
+  "type": "Electricity Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  }
+},
+{
+  "_id": "855ba26e-1565-46f6-be31-5499c896529c",
+  "name": "Wilson, Baldwin and Manning Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  }
+},
+{
+  "_id": "2a9b8d1b-fa8e-44bb-b719-d841870a169e",
+  "name": "Wilson PLC Miscellaneous",
+  "type": "Miscellaneous",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  }
+},
+{
+  "_id": "80203377-4027-48b3-b66b-79dc2eeef464",
+  "name": "Lopez, Rush and Morton Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  }
+},
+{
+  "_id": "045f8907-2b8a-44b8-ae8d-2d1b60b8384f",
+  "name": "Russell, Acevedo and Shaw Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  }
+},
+{
+  "_id": "e3c590d2-f4da-42dd-b23b-da9498416320",
+  "name": "Martinez LLC Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  }
+},
+{
+  "_id": "30917951-0138-4a04-8251-76c27aa50aac",
+  "name": "Mays-Klein Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  }
+},
+{
+  "_id": "80e85b4d-bac9-4148-96f2-276742f18ba1",
+  "name": "Reeves-Novak Bakery",
+  "type": "Bakery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.567Z"
+  }
+},
+{
+  "_id": "1fad5fd4-dce6-4d00-915f-f0c99b084d46",
+  "name": "Reeves, Miller and Jackson Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  }
+},
+{
+  "_id": "f1ca78c6-60f2-43d1-b51a-a74a9985d863",
+  "name": "Nelson PLC Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  }
+},
+{
+  "_id": "c29283b1-85c2-49e4-8667-b952cbad7847",
+  "name": "Miller LLC Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  }
+},
+{
+  "_id": "d782eae9-f556-41b2-ba8a-f1ff2ad11c4c",
+  "name": "Daniels, Alvarado and Odom Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  }
+},
+{
+  "_id": "ec7e0a65-3791-44fe-83f0-7d579f34111a",
+  "name": "Yoder Group Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  }
+},
+{
+  "_id": "a0c21669-63a5-44fd-9af1-9bb3ec46179f",
+  "name": "Beltran Ltd Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  }
+},
+{
+  "_id": "c300b5ce-22a7-4a6b-8546-7500997887e2",
+  "name": "Castillo LLC Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  }
+},
+{
+  "_id": "57ebfa83-dff2-4cef-89b9-4c8719be3003",
+  "name": "Fleming, Perez and Williams Movie Theater",
+  "type": "Movie Theater",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  }
+},
+{
+  "_id": "a3dd425f-770c-4ed6-adaf-9900bb241b4f",
+  "name": "Taylor LLC Movie Theater",
+  "type": "Movie Theater",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  }
+},
+{
+  "_id": "858a2059-7761-4d38-90b0-d69ea40cd7a1",
+  "name": "Gardner, Thomas and Mckee Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  }
+},
+{
+  "_id": "1fcec365-f91e-4cd9-bc1c-4218f295af75",
+  "name": "Mcmahon, Welch and Jackson Miscellaneous",
+  "type": "Miscellaneous",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  }
+},
+{
+  "_id": "e4a13bd5-d19d-4186-99f2-48d9a7210eef",
+  "name": "Hamilton and Sons Online Retail",
+  "type": "Online Retail",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  }
+},
+{
+  "_id": "06d70fd0-6480-4ee2-ad85-0dd9af6cace2",
+  "name": "Scott, Bell and King Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  }
+},
+{
+  "_id": "6918068c-e55d-4e84-8c18-6ed879b3e1e9",
+  "name": "Moon, Conley and Stephenson Electronics Store",
+  "type": "Electronics Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.568Z"
+  }
+},
+{
+  "_id": "10b9f9c6-c5ab-4303-8ca1-5559b3182c2d",
+  "name": "Knapp Group Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  }
+},
+{
+  "_id": "0d8e64f3-32e3-4f8a-917d-e6de3b9f5808",
+  "name": "Black, Morris and Parrish Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  }
+},
+{
+  "_id": "2d0234bc-99ce-48ab-b51b-1a9b4ea6d579",
+  "name": "Schwartz, Patterson and Anderson Amusement Park",
+  "type": "Amusement Park",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  }
+},
+{
+  "_id": "e1e8b1e2-c220-417e-9330-e682f6106d79",
+  "name": "Leblanc, Shaw and Navarro Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  }
+},
+{
+  "_id": "43533edb-37ee-4e2b-a65b-120467610cbc",
+  "name": "Martinez and Sons Amusement Park",
+  "type": "Amusement Park",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  }
+},
+{
+  "_id": "bb3b800a-252e-4b70-87d6-f115f9325fc8",
+  "name": "Mora, Lee and Herrera Water Supply",
+  "type": "Water Supply",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  }
+},
+{
+  "_id": "553bc057-59f6-411c-9288-8d6fbea8a9ca",
+  "name": "Little, Schneider and Wilson Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  }
+},
+{
+  "_id": "cf4aa173-575d-4c35-8c39-11d90c79b4e7",
+  "name": "Maldonado, Wells and Moore Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  }
+},
+{
+  "_id": "8f611fdd-ca40-4421-a190-12ee48f9c93e",
+  "name": "Kennedy Ltd Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  }
+},
+{
+  "_id": "8f806202-9f73-4347-8dbb-ef3ebdf9f406",
+  "name": "Alexander LLC Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  }
+},
+{
+  "_id": "d3b9109e-6bda-42dc-b8db-fac8e3bcaf30",
+  "name": "Sims and Sons Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  }
+},
+{
+  "_id": "51b6c0a7-9685-4f85-bb0a-bed6e24bc627",
+  "name": "Williams Ltd Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.569Z"
+  }
+},
+{
+  "_id": "423c1616-a66f-47f5-a59c-386c91f47ef4",
+  "name": "Hogan, Murphy and Meyers Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  }
+},
+{
+  "_id": "19c9b214-2bf2-4218-8f34-7fa7c875e1eb",
+  "name": "Douglas-Nielsen Online Retail",
+  "type": "Online Retail",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  }
+},
+{
+  "_id": "609b9e81-0f28-48ec-be6e-de7c942d745b",
+  "name": "Coleman and Sons Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  }
+},
+{
+  "_id": "5a8df4fe-d1e2-4e97-95ab-31377c82af2d",
+  "name": "Cox LLC Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  }
+},
+{
+  "_id": "31b882ec-fcdd-4049-b508-ff30542d9b31",
+  "name": "Rocha LLC Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  }
+},
+{
+  "_id": "b6bb6369-e9d0-4bfa-8592-3f7665ac13de",
+  "name": "Stanley, Petersen and Moreno Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  }
+},
+{
+  "_id": "f4da576e-c4c1-4b19-9fe1-7f35b71bb1c1",
+  "name": "Black-Boyd Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  }
+},
+{
+  "_id": "ed490288-d3fe-4267-8653-5683eb52abfa",
+  "name": "Thomas, Wilkinson and Harris Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  }
+},
+{
+  "_id": "2af39e4b-a808-4885-a1be-cc9689e658b4",
+  "name": "Garcia Ltd Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  }
+},
+{
+  "_id": "61e76b57-a77e-4427-9b28-fd186d399fe4",
+  "name": "Peterson-Martinez Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  }
+},
+{
+  "_id": "373fb6ea-8632-4c94-acad-cdc1a762e6d0",
+  "name": "Martin Inc Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  }
+},
+{
+  "_id": "0f6b8167-b0d8-4e6d-bbc0-811639fb16d3",
+  "name": "Young, Williamson and Russell Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.570Z"
+  }
+},
+{
+  "_id": "e10b9cf1-beae-4f43-a0b1-e8705170a927",
+  "name": "Taylor, Martinez and Phillips Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  }
+},
+{
+  "_id": "3a5e6976-3bba-496c-8b3f-f4bfb885d5af",
+  "name": "Cruz, West and Schultz Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  }
+},
+{
+  "_id": "b93ee7ad-3461-47a3-a1f5-8fbd30b65030",
+  "name": "Hull-Young Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  }
+},
+{
+  "_id": "718c2694-090c-42d0-861e-4e2bfa31bf90",
+  "name": "Hall Ltd Online Retail",
+  "type": "Online Retail",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  }
+},
+{
+  "_id": "2edeea29-cc95-408f-bb58-91f80192e1ba",
+  "name": "Mcdonald Group Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  }
+},
+{
+  "_id": "bb5cf0ec-172e-47ef-bfce-efcff3da8e75",
+  "name": "Martin, Marsh and Barrera Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  }
+},
+{
+  "_id": "893073d3-1bca-4a92-a4df-8b2481f14ce6",
+  "name": "Figueroa, Nelson and Lewis Amusement Park",
+  "type": "Amusement Park",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  }
+},
+{
+  "_id": "7ea65637-f5ee-40dc-abba-db97b5232ee3",
+  "name": "Campbell Inc Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  }
+},
+{
+  "_id": "c055a1a4-ce89-4ee3-a67b-76a9143b8665",
+  "name": "Jones, Fields and Harper Miscellaneous",
+  "type": "Miscellaneous",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  }
+},
+{
+  "_id": "e57ed69a-77af-4514-b269-595468529c59",
+  "name": "Wallace, Daniel and Ware Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  }
+},
+{
+  "_id": "75bf9599-543d-4c2a-a9aa-92cb4e2d1c51",
+  "name": "Perry-Robinson Electricity Provider",
+  "type": "Electricity Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  }
+},
+{
+  "_id": "5a1021a2-7615-4bec-aa2c-657b210af6b5",
+  "name": "Martinez, Logan and Wright Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.571Z"
+  }
+},
+{
+  "_id": "db011841-62a8-4135-a974-2cb735505d1d",
+  "name": "Johnson, Thornton and Smith Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  }
+},
+{
+  "_id": "76716484-2830-4e0b-aec5-047e2757ec97",
+  "name": "Russell-Kirk Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  }
+},
+{
+  "_id": "dfcae85d-1740-4454-84f8-6343f7991bcb",
+  "name": "Garrett-Willis Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  }
+},
+{
+  "_id": "1ff130c7-1678-4a94-b850-e2b834d0f16c",
+  "name": "Mccoy and Sons Water Supply",
+  "type": "Water Supply",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  }
+},
+{
+  "_id": "263fd0f6-3d5b-4969-941c-655d4e8b1658",
+  "name": "Weaver-Parker Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  }
+},
+{
+  "_id": "9b25c151-01e9-4ca6-bd5f-a8ce85e4c7e6",
+  "name": "Mckenzie Inc Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  }
+},
+{
+  "_id": "e44298f8-3e9c-4d7d-a3fb-9d3d446f02d2",
+  "name": "Choi, Snyder and Quinn Online Retail",
+  "type": "Online Retail",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  }
+},
+{
+  "_id": "25b46787-3816-46d5-9a29-178079b213fc",
+  "name": "Andrews Ltd Electricity Provider",
+  "type": "Electricity Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  }
+},
+{
+  "_id": "9a274239-48a4-4ccd-8894-b160c16837df",
+  "name": "Bailey, Williams and Mckinney Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  }
+},
+{
+  "_id": "83a47984-924a-4d01-840d-2d8e355912a5",
+  "name": "Lynch, Mccall and Velasquez Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  }
+},
+{
+  "_id": "5696712c-0314-42cb-a4f7-703780ba4f26",
+  "name": "Wood Group Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  }
+},
+{
+  "_id": "ecd1298b-71fa-4d16-98b1-6a0aa14a2b82",
+  "name": "Goodman-Lozano Electronics Store",
+  "type": "Electronics Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  }
+},
+{
+  "_id": "4085e567-f7bc-4fec-ae1b-2c3988a11137",
+  "name": "Henderson-Lopez Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  }
+},
+{
+  "_id": "e1aa66a7-8873-49d7-b814-751906e694f5",
+  "name": "Stevens-Munoz Miscellaneous",
+  "type": "Miscellaneous",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.572Z"
+  }
+},
+{
+  "_id": "04b61ccf-554a-4428-9b2e-5f9793b2986b",
+  "name": "Dudley-Rodriguez Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  }
+},
+{
+  "_id": "ce165390-3402-4832-8d65-da21da390680",
+  "name": "Flowers, Daniels and Anderson Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  }
+},
+{
+  "_id": "7266972c-8076-4e04-8ca0-ab4088634607",
+  "name": "Baker-Thompson Amusement Park",
+  "type": "Amusement Park",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  }
+},
+{
+  "_id": "46398ada-fd3f-450a-b532-3ae7c663f155",
+  "name": "Miller PLC Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  }
+},
+{
+  "_id": "709fe801-b7bd-4057-b2c2-544bef98fb94",
+  "name": "Smith-Smith Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  }
+},
+{
+  "_id": "11ec70bf-d616-4c41-9025-14b6389bd3ce",
+  "name": "Martin-Howard Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  }
+},
+{
+  "_id": "49656dde-bc2c-4499-8031-96d63659429c",
+  "name": "White-Adams Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  }
+},
+{
+  "_id": "4be60e42-a870-4b49-8efc-bd7fd3a2ce68",
+  "name": "Davis, Woods and Murphy Bakery",
+  "type": "Bakery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  }
+},
+{
+  "_id": "4254ddc6-553a-48b7-9aca-24ceaad01c7e",
+  "name": "Warren, Gutierrez and Quinn Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  }
+},
+{
+  "_id": "654f3f26-4808-498f-aef1-b52e2316130f",
+  "name": "Smith, Rhodes and Nielsen Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  }
+},
+{
+  "_id": "518f4054-374b-40a4-ab01-faf2f120e952",
+  "name": "Robinson PLC Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  }
+},
+{
+  "_id": "82b99952-37c1-4b01-b23f-26f88f90e4bf",
+  "name": "Kim Group Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  }
+},
+{
+  "_id": "ad3bda16-881f-4859-904c-4d7f3fa4e668",
+  "name": "Rice, Lester and Gaines Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.573Z"
+  }
+},
+{
+  "_id": "eb5e74d0-448c-4801-adf2-70717f1eb681",
+  "name": "Mcdonald Inc Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  }
+},
+{
+  "_id": "57fcb9d8-9c05-42e1-801e-68a8fde5801d",
+  "name": "Norris PLC Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  }
+},
+{
+  "_id": "266ad51d-4440-45eb-b012-e6bf82884b14",
+  "name": "Nielsen, Anderson and Lang Bakery",
+  "type": "Bakery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  }
+},
+{
+  "_id": "55b14f34-e1d6-4450-9cc6-d0e5d8717722",
+  "name": "Stephens and Sons Online Retail",
+  "type": "Online Retail",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  }
+},
+{
+  "_id": "1db41077-94d2-4e7d-81d7-be15c57a7642",
+  "name": "Thomas, Nichols and Smith Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  }
+},
+{
+  "_id": "e3621145-2d6b-49a9-aff1-fddda498b18e",
+  "name": "Fernandez Inc Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  }
+},
+{
+  "_id": "43105f65-e64a-474f-ad25-fb3c264ea329",
+  "name": "Baker-Morgan Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  }
+},
+{
+  "_id": "b68c75eb-8fb6-4dda-a436-5ed9b9f0c904",
+  "name": "Wright-Larson Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  }
+},
+{
+  "_id": "92cf180b-8ada-4b92-885a-20a4956c372d",
+  "name": "Robinson-Jarvis Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  }
+},
+{
+  "_id": "39e5cc03-2f8a-4343-b12c-dd8ae49e3797",
+  "name": "Johnson, Mueller and Ellis Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  }
+},
+{
+  "_id": "cdbf02cc-1897-4243-8993-6b6a2e3eb4ea",
+  "name": "Proctor-Phillips Water Supply",
+  "type": "Water Supply",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  }
+},
+{
+  "_id": "4e7d0d68-5f46-49e8-88b2-2a10d2638635",
+  "name": "Smith, Bowers and Smith Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  }
+},
+{
+  "_id": "3949303a-cb75-4210-9f2b-7274727ff718",
+  "name": "Knight, Farley and Carter Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.574Z"
+  }
+},
+{
+  "_id": "d2880c9d-aba1-493d-a9d8-78180aab7592",
+  "name": "Wilson, Green and Sheppard Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  }
+},
+{
+  "_id": "df39a2b9-edbf-4fa2-8fbf-4cb914dfea82",
+  "name": "Rodriguez, Allen and Jones Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  }
+},
+{
+  "_id": "2912938f-f53a-44ed-bf6b-e46aada81447",
+  "name": "Holden, Osborn and Martinez Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  }
+},
+{
+  "_id": "eb4f77ac-d278-4efe-8651-22ba41574516",
+  "name": "Carney, Baker and Brown Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  }
+},
+{
+  "_id": "7e2266c8-3ff1-4e9b-94d3-1ce6e64a51d4",
+  "name": "Warren, Ross and Terrell Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  }
+},
+{
+  "_id": "bb163fa6-df31-4dbb-90c4-aa98978d7f3e",
+  "name": "Pena-Molina Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  }
+},
+{
+  "_id": "b74ea74e-0f56-4743-9c57-dcc608cf9e0d",
+  "name": "Vazquez, Martin and Moore Bakery",
+  "type": "Bakery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  }
+},
+{
+  "_id": "11fc9bfb-d0d7-466e-beb3-d338bb170d1b",
+  "name": "Hart, Boyd and Williams Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  }
+},
+{
+  "_id": "0bc8c67f-d504-4613-a688-4e0bab3f90cb",
+  "name": "Graham, Walker and Shepard Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  }
+},
+{
+  "_id": "94efcc59-c092-4b5d-90dd-82d28d909e4b",
+  "name": "Lane, Tucker and Dickerson Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.575Z"
+  }
+},
+{
+  "_id": "dec3b712-6b0d-4b93-926a-57726a810563",
+  "name": "Garcia-Thompson Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  }
+},
+{
+  "_id": "8255200c-c3f8-4c45-b163-e99e7900def5",
+  "name": "Carney, Garcia and Hammond Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  }
+},
+{
+  "_id": "0538e80f-276d-4343-8e56-1cd270b47db6",
+  "name": "Herrera Group Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  }
+},
+{
+  "_id": "3b532b86-e06e-40dd-b20b-7ea65ceb8a07",
+  "name": "Gonzalez-Walker Movie Theater",
+  "type": "Movie Theater",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  }
+},
+{
+  "_id": "86b8494a-10df-4924-9b01-aaf304396189",
+  "name": "Bolton-Perez Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  }
+},
+{
+  "_id": "50112756-7090-4fcf-bbce-955da9ea6964",
+  "name": "Moreno-Malone Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  }
+},
+{
+  "_id": "a6745b95-4f55-4167-b8eb-60cd8d1985af",
+  "name": "Price-Rose Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  }
+},
+{
+  "_id": "58c4df78-1a16-460d-8510-7feb46083c7d",
+  "name": "Cowan-Holloway Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  }
+},
+{
+  "_id": "6637e39b-0743-4a18-bd9d-9ba7e6223543",
+  "name": "Barrett-Cruz Miscellaneous",
+  "type": "Miscellaneous",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  }
+},
+{
+  "_id": "4e3d7030-d345-467c-a0c4-c82853b103e4",
+  "name": "Monroe-Smith Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  }
+},
+{
+  "_id": "b3ce49ee-9d40-4552-886f-7714578a62a1",
+  "name": "Adams-Perkins Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  }
+},
+{
+  "_id": "5bd5ea14-9296-4870-b25c-063176bec693",
+  "name": "Hall Group Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  }
+},
+{
+  "_id": "0f0a048a-0288-4316-b253-b60e4dc7f2e8",
+  "name": "Wilkins-Pope Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  }
+},
+{
+  "_id": "ebfe5b14-bcd8-40c5-b43b-2737d9b59a89",
+  "name": "Wagner-Moore Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.576Z"
+  }
+},
+{
+  "_id": "45b16b49-cdd6-4063-bea8-04b279cbbc4e",
+  "name": "Simpson, White and Kemp Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  }
+},
+{
+  "_id": "dbb79a91-a248-4007-98c2-6c2b07456eca",
+  "name": "Hayes, Cantu and Wyatt Electronics Store",
+  "type": "Electronics Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  }
+},
+{
+  "_id": "e876774e-9c5b-451a-ace5-5a0e662ec469",
+  "name": "Garcia-Dean Movie Theater",
+  "type": "Movie Theater",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  }
+},
+{
+  "_id": "09df989b-6adb-42e9-8085-dd62a2bdd0cb",
+  "name": "Davis, Roberson and Buck Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  }
+},
+{
+  "_id": "d3eb26ed-3d55-4d2a-ab73-361f16e5615f",
+  "name": "Stewart, Jones and Mcconnell Miscellaneous",
+  "type": "Miscellaneous",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  }
+},
+{
+  "_id": "0643cd8e-d2d9-4163-bf9f-aa26cf886231",
+  "name": "Sharp, Mckenzie and Oliver Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  }
+},
+{
+  "_id": "9957de1e-85bf-4f21-aacd-e9c0fda57f93",
+  "name": "Walker, Cummings and Mcdonald Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  }
+},
+{
+  "_id": "f85b1b33-ff38-40fc-bc08-541c765506e2",
+  "name": "Roth Ltd Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  }
+},
+{
+  "_id": "d28aaff7-23dc-47ec-9cba-7f5cdf2018e4",
+  "name": "Esparza-Clark Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  }
+},
+{
+  "_id": "ca9597b8-25f3-4d25-bde3-e232b824891c",
+  "name": "Bright PLC Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  }
+},
+{
+  "_id": "a75cd9de-9226-4024-afd8-83ab6f14a04d",
+  "name": "Mcgee, Carney and Blanchard Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  }
+},
+{
+  "_id": "69068b61-41bc-4954-b7f3-f49b0cdfb990",
+  "name": "Beasley-Davis Bakery",
+  "type": "Bakery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.577Z"
+  }
+},
+{
+  "_id": "8804ea28-c5b1-4323-bc73-2227ff643812",
+  "name": "Hahn, Woods and Mcgee Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  }
+},
+{
+  "_id": "421d6461-cb09-41ef-9e58-b5428f9e103d",
+  "name": "Sandoval, Hendrix and Jones Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  }
+},
+{
+  "_id": "311284e7-164f-4600-b884-e34610a727d8",
+  "name": "Brown, White and Williams Online Retail",
+  "type": "Online Retail",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  }
+},
+{
+  "_id": "5769e14c-330e-417e-95fb-56ed170b2451",
+  "name": "Nguyen, Ramos and Farley Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  }
+},
+{
+  "_id": "9315df3f-a88c-4478-b0db-ad1ac596f3c4",
+  "name": "Orr, Martinez and Lewis Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  }
+},
+{
+  "_id": "6417f404-8ccf-47eb-962a-5e37955ef35c",
+  "name": "Carter, Morton and Jones Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  }
+},
+{
+  "_id": "147b5e00-6ade-4698-a0a7-782f5f96a919",
+  "name": "Lee, Hunter and Moyer Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  }
+},
+{
+  "_id": "f388ae75-a4b0-440f-8edc-68c3f6e1ffbc",
+  "name": "Fischer Inc Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  }
+},
+{
+  "_id": "ca50d3e8-9629-4762-8f50-0040e0dac7d8",
+  "name": "Walker, Allen and Villa Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  }
+},
+{
+  "_id": "4d881028-eaaf-4a25-b38e-1bf2fb8042f7",
+  "name": "Jones and Sons Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  }
+},
+{
+  "_id": "ac2d5601-5e8a-4266-812c-3b1275a2ac49",
+  "name": "Castillo PLC Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  }
+},
+{
+  "_id": "084dba2c-5daa-4730-990c-2f7381d96635",
+  "name": "Garza-Cook Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  }
+},
+{
+  "_id": "728be1b3-e5b8-499e-8beb-93f2e4627ea4",
+  "name": "Taylor, Adams and Burton Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.578Z"
+  }
+},
+{
+  "_id": "35a246ba-b54a-4885-ad04-0ae5369618de",
+  "name": "Sanchez-Warren Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  }
+},
+{
+  "_id": "8cb2813e-8e4e-4bd2-9c25-493755ae84d3",
+  "name": "Perry-Cox Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  }
+},
+{
+  "_id": "786903cf-16f2-4ad3-80c8-328935ee7df8",
+  "name": "Carrillo, Bennett and Clay Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  }
+},
+{
+  "_id": "e6a3a4bf-27dc-414b-ba13-af42d1101d6f",
+  "name": "Smith-Bradley Electronics Store",
+  "type": "Electronics Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  }
+},
+{
+  "_id": "a263bba3-fa8f-435e-a323-c52a9aa4782d",
+  "name": "Larsen, Dickson and Graham Electronics Store",
+  "type": "Electronics Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  }
+},
+{
+  "_id": "e648ee43-1bcd-4060-9232-a77808c9efa3",
+  "name": "Mcdonald, Smith and Williams Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  }
+},
+{
+  "_id": "f8572c73-862d-4a47-b646-349c23f1f8aa",
+  "name": "Campbell-Bennett Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  }
+},
+{
+  "_id": "82a4e1f4-6359-40af-bb93-d367b366df4d",
+  "name": "Johns, Gonzalez and Allen Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  }
+},
+{
+  "_id": "ef77d40b-471e-4954-a8dc-3c6647a471fd",
+  "name": "Richard-Gardner Miscellaneous",
+  "type": "Miscellaneous",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  }
+},
+{
+  "_id": "b3a0eb3b-38de-44f8-a8cb-8c1a53a584ee",
+  "name": "Welch-Reid Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  }
+},
+{
+  "_id": "bc34c09a-6ab2-4c51-b4a2-483f138b9bbc",
+  "name": "Evans-Morrison Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  }
+},
+{
+  "_id": "39da4061-24fc-4c0f-8a26-40fe5dd1b583",
+  "name": "Hunt, Marsh and Howell Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.579Z"
+  }
+},
+{
+  "_id": "b8c2451c-e989-40dc-880b-b68b14cdbb25",
+  "name": "Johnson-Richards Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  }
+},
+{
+  "_id": "b5b7a939-c44f-46f9-a19d-b19c89127f1c",
+  "name": "Carpenter-Dunn Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  }
+},
+{
+  "_id": "d878db70-8fd5-43b0-80c9-c3b1c660b9c1",
+  "name": "Krueger, Hamilton and Davis Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  }
+},
+{
+  "_id": "e668a670-3fef-448e-a6ca-c60b7b8fd33b",
+  "name": "Bailey, Ellison and Valentine Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  }
+},
+{
+  "_id": "9f3808b8-e85e-4bd9-9a3e-c5973ec18baa",
+  "name": "Mendoza, Marsh and Hopkins Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  }
+},
+{
+  "_id": "3a832188-8e19-4395-b833-f38581d1c08c",
+  "name": "Orozco LLC Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  }
+},
+{
+  "_id": "20547512-4862-451d-a3b6-049fe74ce270",
+  "name": "Lewis-Miller Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  }
+},
+{
+  "_id": "a3695da2-c949-4f20-aa72-abb675fb436f",
+  "name": "Young, Harrison and Lewis Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  }
+},
+{
+  "_id": "5f0037bf-64bf-4787-8d9f-c6aa1d9166f1",
+  "name": "Lynch Group Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  }
+},
+{
+  "_id": "89979d51-947e-4429-9a61-0f246a88f642",
+  "name": "Walters LLC Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  }
+},
+{
+  "_id": "eb52105d-38f7-4360-b872-05b193d3a9a2",
+  "name": "Rogers-Yates Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  }
+},
+{
+  "_id": "6a0c416a-a89a-44c7-b0f7-ba666259df91",
+  "name": "Martinez-Martin Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  }
+},
+{
+  "_id": "3810ced1-da44-41f1-b0ee-d0556010e8f2",
+  "name": "Phillips-Scott Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  }
+},
+{
+  "_id": "d164dc8f-1f56-4b81-ad71-62d6f5cf4333",
+  "name": "Burke-Klein Bakery",
+  "type": "Bakery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.580Z"
+  }
+},
+{
+  "_id": "d5592bfa-1060-4734-8bb3-28fd8ca74d1f",
+  "name": "Gomez, Castro and Herring Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  }
+},
+{
+  "_id": "f48a6e8c-98f4-49f9-a39b-c45db34082ad",
+  "name": "Jones-Bowman Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  }
+},
+{
+  "_id": "e95e6287-560c-463b-950d-844e12c86954",
+  "name": "Smith, Ramirez and Peters Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  }
+},
+{
+  "_id": "86e0588e-a169-4cf0-ac68-9b75b9c0378d",
+  "name": "Mooney-Horton Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  }
+},
+{
+  "_id": "a19ad702-b3ce-4e46-bb64-e8a57dbc7628",
+  "name": "Robles, Booker and Torres Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  }
+},
+{
+  "_id": "132d48ba-d0ce-4adc-add2-70abdad6bb6d",
+  "name": "Cobb, Herman and Krueger Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  }
+},
+{
+  "_id": "62f7b6a0-047e-4c75-bb16-144710cd3579",
+  "name": "Stephens-Nash Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  }
+},
+{
+  "_id": "1b80f4ef-5f3a-4cb2-a642-6f707c17f033",
+  "name": "Lee-Pugh Online Retail",
+  "type": "Online Retail",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  }
+},
+{
+  "_id": "c3f56a6f-c093-4b51-b3aa-e0e81964e0cc",
+  "name": "Barrett PLC Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  }
+},
+{
+  "_id": "addbc92e-9d24-4ea7-ae3f-5abd802ff8bf",
+  "name": "Walker-Barry Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  }
+},
+{
+  "_id": "42b02021-5090-4dda-9aa1-45dc0c65d180",
+  "name": "Acevedo, Moore and Shelton Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  }
+},
+{
+  "_id": "9bf895b7-98e2-4c32-a5ac-38a6b6852118",
+  "name": "Campbell PLC Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  }
+},
+{
+  "_id": "f24de6b6-158c-4b7b-91bc-0ba9c93d54f7",
+  "name": "Mccormick-Smith Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  }
+},
+{
+  "_id": "5eca166b-2c89-40ba-95d1-8e407845d8d1",
+  "name": "Lopez Inc Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.581Z"
+  }
+},
+{
+  "_id": "7598c2a2-9d25-4130-b61e-bee51ea74964",
+  "name": "Lewis, Wagner and Ramos Electronics Store",
+  "type": "Electronics Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  }
+},
+{
+  "_id": "2d7bcd45-ef18-4b61-999f-772f1af971b9",
+  "name": "Mckee, King and Woods Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  }
+},
+{
+  "_id": "924d8412-ade6-4500-bc99-f6211b68c94c",
+  "name": "Anthony LLC Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  }
+},
+{
+  "_id": "70645848-e909-4a5b-b4f6-24f42bd0397d",
+  "name": "Gomez LLC Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  }
+},
+{
+  "_id": "2fe498d5-5c63-4255-bbfc-0a16061f70a1",
+  "name": "Yoder-King Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  }
+},
+{
+  "_id": "4e855ef0-dc07-482a-aaa5-478bfe1e9c3f",
+  "name": "Williams, Wells and West Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  }
+},
+{
+  "_id": "718aa6ef-9216-4569-b962-9507b9807bec",
+  "name": "Watson-Mccoy Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  }
+},
+{
+  "_id": "a15106f2-67eb-4f13-b425-8f702df46023",
+  "name": "Callahan, Levy and Patton Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  }
+},
+{
+  "_id": "89344c1c-2137-4894-9cd2-2c5d64f27a24",
+  "name": "Ho-Bell Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  }
+},
+{
+  "_id": "44f8c5c6-7d74-4fa9-9157-2c3bce6ce058",
+  "name": "Sims, Weaver and Whitaker Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  }
+},
+{
+  "_id": "1c0666d0-bea8-49d0-9274-59c3a7cd7979",
+  "name": "Hall Ltd Electricity Provider",
+  "type": "Electricity Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  }
+},
+{
+  "_id": "bba50d06-d4da-4f3e-be10-0380ac466b16",
+  "name": "Wright-Clark Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  }
+},
+{
+  "_id": "51b36cf4-5d30-49a5-b336-3dab676b5d03",
+  "name": "Thompson-Oneal Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  }
+},
+{
+  "_id": "c68eb49c-5bc1-41d7-90c4-a8e56a6e47ca",
+  "name": "Caldwell-Romero Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  }
+},
+{
+  "_id": "6948208b-2032-4303-9ba7-927bfe654b1b",
+  "name": "Webb-Tucker Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.582Z"
+  }
+},
+{
+  "_id": "5fe60f4e-36b8-4d4b-9d59-8ffa22cbabcc",
+  "name": "Smith, Parks and Benson Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  }
+},
+{
+  "_id": "084bf2ba-a61b-41fd-99e4-25fc2fa7d6c7",
+  "name": "Smith and Sons Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  }
+},
+{
+  "_id": "1556c11e-6ce7-4eb2-a4b3-58e301c0d10a",
+  "name": "Ford-Bell Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  }
+},
+{
+  "_id": "6f03df96-ec7a-4251-b896-27c65f3ad063",
+  "name": "Campbell Group Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  }
+},
+{
+  "_id": "8244d730-9d53-4104-8f6f-857769253c98",
+  "name": "Williams, Bell and Henderson Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  }
+},
+{
+  "_id": "2462a89c-d41f-4c26-886f-cf08e9dda49f",
+  "name": "Baldwin-Peters Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  }
+},
+{
+  "_id": "acfdb752-4692-460e-a705-95e6533d4b5d",
+  "name": "Peterson-Bush Electronics Store",
+  "type": "Electronics Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  }
+},
+{
+  "_id": "d75078e5-67d7-4d42-a3e1-10da12295836",
+  "name": "Simpson, Santos and Green Electricity Provider",
+  "type": "Electricity Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  }
+},
+{
+  "_id": "858380bd-9c4e-4dc1-87d7-ec790235d84b",
+  "name": "Buchanan-Murphy Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  }
+},
+{
+  "_id": "0e3e7e76-0ea9-4609-bab3-4e2da6a46d53",
+  "name": "Wheeler, Hunt and Nelson Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  }
+},
+{
+  "_id": "fe6d2ed7-5ce3-4521-b63f-45b41dae32d4",
+  "name": "Williams Inc Miscellaneous",
+  "type": "Miscellaneous",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  }
+},
+{
+  "_id": "dd8e86db-4b08-4849-affd-394a937ea22a",
+  "name": "Ward Inc Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  }
+},
+{
+  "_id": "afc7a9dc-9ae2-4510-8109-c785e167ccb1",
+  "name": "Wilson-Davis Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  }
+},
+{
+  "_id": "a3a73974-d9a5-4566-84c8-a1d64992e394",
+  "name": "Newton LLC Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  }
+},
+{
+  "_id": "e1b54d02-c274-401a-a104-d96f93100e97",
+  "name": "Chen Inc Electronics Store",
+  "type": "Electronics Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.583Z"
+  }
+},
+{
+  "_id": "befe2f9f-1de9-4ea2-95a6-5fe6453c1ff5",
+  "name": "Carter-Hutchinson Online Retail",
+  "type": "Online Retail",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "52631f23-458c-4273-81c2-4ae144a7f208",
+  "name": "Summers, Avery and Leonard Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "a9ad9413-f4f8-49a0-9fd8-09234ccbf1c5",
+  "name": "Wilcox, White and Dixon Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "32b07f0f-311f-441d-808a-31681859b056",
+  "name": "Hayes-Williams Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "c28e30b5-1056-4b20-b6ca-b2e0dda59f0c",
+  "name": "Rivera Group Water Supply",
+  "type": "Water Supply",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "dd0dac74-4b50-418f-9d2c-c47d70a0c813",
+  "name": "Ramos-Parker Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "e888513d-81ed-43c3-8013-19722b9c0574",
+  "name": "Campbell, Hopkins and Monroe Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "de411ab7-a994-4d10-bb5e-13489d412d65",
+  "name": "Adkins Group Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "70fb899f-f158-41cd-80f0-e12a4b476b0c",
+  "name": "Drake PLC Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "72786afe-59ce-433c-a627-800552821452",
+  "name": "Martinez and Sons Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "d8d20437-e7dc-4743-8595-aa38e851cf8d",
+  "name": "Stone-Castro Bakery",
+  "type": "Bakery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "89cc7689-3027-4d7c-8fde-97fffcebef13",
+  "name": "Marks-Howard Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "a15e5857-8da9-42c5-8e56-13b3d7d97e91",
+  "name": "Garcia Ltd Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "942224f5-d066-45e3-96da-39364636029f",
+  "name": "Woods LLC Electronics Store",
+  "type": "Electronics Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "dd4d31c4-8795-49ba-9cb0-7700f1ef49c2",
+  "name": "Reese, Buck and Leonard Miscellaneous",
+  "type": "Miscellaneous",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "ba28065d-497d-4268-8e50-9dafec5ade5c",
+  "name": "Warner and Sons Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.584Z"
+  }
+},
+{
+  "_id": "8fa6917f-d4d3-48fb-8d5d-5f830acee1b4",
+  "name": "Walsh, Bauer and Hicks Bakery",
+  "type": "Bakery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  }
+},
+{
+  "_id": "ff4da36b-bf2a-47d6-b14c-b2a0a15fa916",
+  "name": "Odom Group Water Supply",
+  "type": "Water Supply",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  }
+},
+{
+  "_id": "aaa80ca8-4773-431e-9dad-02c9a1f78885",
+  "name": "Benson, Hayes and Cooper Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  }
+},
+{
+  "_id": "cc065391-0c97-4996-af0a-31dc680df4ca",
+  "name": "Olsen-Jones Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  }
+},
+{
+  "_id": "390dd1de-0de0-4d85-9a37-8612b913551c",
+  "name": "Stanley, West and Kelley Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  }
+},
+{
+  "_id": "bf15fc94-ad75-4639-b6c8-e65450ea2082",
+  "name": "Nash LLC Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  }
+},
+{
+  "_id": "ace22960-4383-4091-a247-6ab3a2bc3eb9",
+  "name": "Johnson, Green and Norris Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  }
+},
+{
+  "_id": "afc53330-de15-47c0-9bc8-2dfcc52d8ea0",
+  "name": "Campbell LLC Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  }
+},
+{
+  "_id": "73ff1ca0-fcc0-45a5-956b-abe4632474bc",
+  "name": "Curry-Nelson Miscellaneous",
+  "type": "Miscellaneous",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  }
+},
+{
+  "_id": "9ae5c880-7151-4f82-a57b-13f90c3e908c",
+  "name": "Kelly, Solomon and Yoder Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  }
+},
+{
+  "_id": "4f8631ea-5c74-4849-bbba-8eb3f0f58aab",
+  "name": "Burton, Black and Khan Online Retail",
+  "type": "Online Retail",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  }
+},
+{
+  "_id": "18d37134-b4a6-4c29-bd1a-e5754cf3fd9b",
+  "name": "Figueroa-Chambers Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  }
+},
+{
+  "_id": "366aa875-403f-4bf2-bbf7-7a53c05491be",
+  "name": "Berry-Perez Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  }
+},
+{
+  "_id": "8c93d4e9-f137-4c5c-ba0f-2a6568edcff0",
+  "name": "Mcdaniel, Brown and Miller Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.585Z"
+  }
+},
+{
+  "_id": "c2fe492a-1a80-43a7-b782-5975c80ccf8e",
+  "name": "Anderson Inc Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "bc0274d3-4cfe-4fa1-abfc-6ba973c1f533",
+  "name": "Herring Group Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "e623060f-3d45-42b6-bbe6-d2a36a811b67",
+  "name": "Collins and Sons Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "f079ef42-4f9f-407a-9693-38301783586d",
+  "name": "Park-Martinez Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "e601848d-a312-4a87-b4d6-fa1a859b1c7c",
+  "name": "Davis, Ferguson and Boyd Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "1fda68c8-dd75-4f09-8b45-22004142bbf3",
+  "name": "Conrad, Duncan and Jackson Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "fa3cc105-ecef-4123-8b39-12838b88ee7a",
+  "name": "Molina and Sons Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "800c95f9-4b53-47fc-9d61-133d49d4e2ba",
+  "name": "Ryan, Long and Robinson Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "bbe0ced1-0ecd-49b2-825f-8ec5dea90bd0",
+  "name": "Sanchez, Johnson and White Water Supply",
+  "type": "Water Supply",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "78641b25-b66f-43a7-934a-5cdf5b13bd6b",
+  "name": "Martinez-Anderson Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "f1d7d022-0f85-4a7e-ab12-2c417e5dd949",
+  "name": "Perez PLC Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "4bf0c9d2-7e2a-4b9f-a752-6154221548e6",
+  "name": "Mcbride Group Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "11b736f0-a5bf-4e7b-b7b0-3f2d951af56a",
+  "name": "Davis, Meza and Ashley Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "81fb68b5-024c-476e-ae81-0f95cd3b5aa2",
+  "name": "Snyder LLC Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "618338a4-9435-4177-a932-4f1e87115bb3",
+  "name": "Case Group Electronics Store",
+  "type": "Electronics Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "fab1d93e-7f15-44c3-be2e-02427a648643",
+  "name": "Mann Inc Movie Theater",
+  "type": "Movie Theater",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "1e1f0f76-006d-45ca-a0ad-fca032d33b3b",
+  "name": "Coleman-Wilson Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.586Z"
+  }
+},
+{
+  "_id": "c45ae4e1-0414-4415-ac7b-d332d02f0a0a",
+  "name": "Wu PLC Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  }
+},
+{
+  "_id": "2c8c2436-0507-4f1c-b359-b36b9f471179",
+  "name": "Cuevas LLC Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  }
+},
+{
+  "_id": "55d483fb-6ea3-401a-bb50-203a77f6dfe7",
+  "name": "Browning, Brown and Johnson Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  }
+},
+{
+  "_id": "145e7f6d-349b-4684-8d7c-aeb72c73f451",
+  "name": "Gross, Williams and Olson Online Retail",
+  "type": "Online Retail",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  }
+},
+{
+  "_id": "63d8714a-d06b-487b-b340-31510e426bd2",
+  "name": "Novak-Lee Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  }
+},
+{
+  "_id": "8cccbe61-ae49-4f9e-90de-f607eef4aad9",
+  "name": "Bailey Inc Bakery",
+  "type": "Bakery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  }
+},
+{
+  "_id": "22b3a2b2-f9c0-4cd9-94b2-49c0de6d735e",
+  "name": "Taylor Inc Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  }
+},
+{
+  "_id": "e120cf07-26de-41cf-99b1-28fc18e6020e",
+  "name": "Lopez, Jones and Anthony Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  }
+},
+{
+  "_id": "ba4728df-cb46-440b-999c-14348b4ef761",
+  "name": "Bailey-Fields Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  }
+},
+{
+  "_id": "bdb6a083-f9f9-4d10-9730-69b55572322e",
+  "name": "Hernandez Inc Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  }
+},
+{
+  "_id": "467903c0-5a92-4524-b9f5-dc0159e55b85",
+  "name": "Turner and Sons Water Supply",
+  "type": "Water Supply",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  }
+},
+{
+  "_id": "2e3c8f70-0e76-469b-87d8-3892ac5b5037",
+  "name": "Cisneros, Lucero and Sullivan Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  }
+},
+{
+  "_id": "b5f021cb-53bd-4c33-93c5-1b7f513bf977",
+  "name": "Mason Inc Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  }
+},
+{
+  "_id": "7323210d-4c20-4bdb-aa00-a11d57820838",
+  "name": "Anderson-Rogers Electricity Provider",
+  "type": "Electricity Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  }
+},
+{
+  "_id": "bad345d8-532d-4574-ac7d-4846bb46833e",
+  "name": "Hernandez, Benjamin and Sherman Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.587Z"
+  }
+},
+{
+  "_id": "78d70b47-1546-4496-b83c-4ea10b76439a",
+  "name": "Caldwell, Sanchez and Parker Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  }
+},
+{
+  "_id": "7b38bf84-b97b-4c60-bce8-9b81192888e2",
+  "name": "Tate, Dean and Snyder Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  }
+},
+{
+  "_id": "f3262f77-1e3c-44f4-b259-e73a7db83794",
+  "name": "Franco Ltd Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  }
+},
+{
+  "_id": "3b7b096d-8bd7-4d53-9700-ffab565c44a9",
+  "name": "Gardner, Fields and Jenkins Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  }
+},
+{
+  "_id": "0a152d8e-b38d-4047-b30f-5a5907ae72aa",
+  "name": "Pena, Mason and King Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  }
+},
+{
+  "_id": "2bfe4094-3eb6-4db2-a48d-43d50f651482",
+  "name": "Knapp, Gomez and Nelson Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  }
+},
+{
+  "_id": "53a36a98-f3a7-4e31-b08b-f858276c7d00",
+  "name": "Medina, Baker and Jackson Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  }
+},
+{
+  "_id": "c4511922-2b93-45c7-ba37-da9d97bb6316",
+  "name": "Soto-Kirk Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  }
+},
+{
+  "_id": "baeea389-cbee-4837-95f9-1b3b56bfa3e4",
+  "name": "Henry, Davis and Villanueva Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  }
+},
+{
+  "_id": "025636c4-48f7-45ed-9951-9017f4a97789",
+  "name": "Cook, Lee and Walter Water Supply",
+  "type": "Water Supply",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  }
+},
+{
+  "_id": "dcedc689-05a1-4f36-b435-447a3456fd0d",
+  "name": "Jackson-Fischer Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  }
+},
+{
+  "_id": "7dd3961a-d27c-42ea-841e-fdc05763e56d",
+  "name": "Rogers, Mccoy and Wright Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  }
+},
+{
+  "_id": "8f42ef0e-7fed-4f26-afa3-459a42af2dd5",
+  "name": "Wilson LLC Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.588Z"
+  }
+},
+{
+  "_id": "2ed3919a-39eb-4098-9990-2dcf0377f35c",
+  "name": "Caldwell, Baird and Rodriguez Bakery",
+  "type": "Bakery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "9a17dbee-cb49-44ed-8bd0-fbe40fe78549",
+  "name": "Davis Inc Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "b4553290-1a3a-4d0d-b68e-00e14e5ad6d8",
+  "name": "Torres Ltd Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "6b11985f-8902-48ac-9642-de9e825a344c",
+  "name": "Taylor-Franco Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "1f940c39-ba48-4d92-a62b-35b1c97f6f08",
+  "name": "Moore and Sons Electricity Provider",
+  "type": "Electricity Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "46aaebd5-6e6c-4b46-93bf-f52ea2c3b50f",
+  "name": "Solis-Frederick Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "da7ef00e-0eca-472f-a274-ad3d4f92d66e",
+  "name": "Osborn, Cox and Jones Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "e4da41b6-cadb-469a-8129-d3cc880abf3b",
+  "name": "Santos, Freeman and Bailey Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "6c5f7f8a-c9a2-48c0-aec2-669ecbfad22e",
+  "name": "Morse-Fox Water Supply",
+  "type": "Water Supply",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "37f899b9-7bda-4fb9-b34c-555f53727de0",
+  "name": "Baker LLC Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "8b55293c-3f3e-40a3-ad04-d69a3dbbc274",
+  "name": "Santiago Inc Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "d1512e1e-a03a-465b-add9-655816fcf58b",
+  "name": "Smith Group Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "64aa6c5e-790a-4df1-a402-bda06d954058",
+  "name": "Craig, Lloyd and Rivera Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "1d7691f3-c82c-480e-ba1e-2684a84a70a3",
+  "name": "Crosby Inc Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "9a67545b-a179-4cdb-9c9c-76c82720f294",
+  "name": "Park-Rivera Electronics Store",
+  "type": "Electronics Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "c4524673-12be-4291-b45c-a61361336b2a",
+  "name": "Obrien-Williamson Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.589Z"
+  }
+},
+{
+  "_id": "f93c1bdc-c0e8-45b0-8e77-60cd45737c5a",
+  "name": "Becker, Wilkerson and Roberts Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  }
+},
+{
+  "_id": "8de0cad1-3192-4360-a8c3-622aa66252d6",
+  "name": "Mullins-Hahn Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  }
+},
+{
+  "_id": "387c2342-0575-4ab7-ba38-8fd3915f57d6",
+  "name": "Watkins Ltd Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  }
+},
+{
+  "_id": "042e8e0d-c339-4dfb-a435-e427b7ca9c81",
+  "name": "White-Armstrong Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  }
+},
+{
+  "_id": "2111c356-60ff-4c9c-a7c2-44acebcfea21",
+  "name": "Thompson, Lewis and Edwards Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  }
+},
+{
+  "_id": "a4f11c9f-743c-4ae6-9c56-8e2c5adae06a",
+  "name": "Suarez, Fitzgerald and Bowman Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  }
+},
+{
+  "_id": "b018a474-a9ef-4c8d-a45e-c53d8ae19d5a",
+  "name": "Glass, Bailey and Smith Electronics Store",
+  "type": "Electronics Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  }
+},
+{
+  "_id": "5793f5a3-4b2e-4193-8204-b6192723a169",
+  "name": "Odonnell PLC Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  }
+},
+{
+  "_id": "89ee8c0d-6850-4819-8786-b741a6a6b2dc",
+  "name": "Richardson, Harmon and Mitchell Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  }
+},
+{
+  "_id": "5614fe78-ecb3-43f6-af22-deecbd3ae830",
+  "name": "Jacobs, Collins and Scott Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  }
+},
+{
+  "_id": "6e51b4fa-00a6-4915-848e-5214e71324d6",
+  "name": "Holmes, Moore and Martin Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  }
+},
+{
+  "_id": "07fda34a-4f0a-49a8-9e80-fee83edbe224",
+  "name": "Sexton-Lucas Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  }
+},
+{
+  "_id": "9dda9d96-9031-4456-b892-c56c58f0016b",
+  "name": "Smith-Garcia Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.590Z"
+  }
+},
+{
+  "_id": "3b75cb01-8ba1-4823-b642-58509d605c76",
+  "name": "Tanner-Callahan Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  }
+},
+{
+  "_id": "e702d35c-d56e-4f3c-a32a-0f23a3e4d7a1",
+  "name": "Hogan-Peterson Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  }
+},
+{
+  "_id": "1cf86435-56d0-4049-9c12-02983efe149e",
+  "name": "Nichols, Duffy and Beck Electronics Store",
+  "type": "Electronics Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  }
+},
+{
+  "_id": "54894320-b839-43b2-b0a9-caccd813d91d",
+  "name": "Howard LLC Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  }
+},
+{
+  "_id": "2ecfa9ff-1ef6-4af2-86bf-7263e9708f53",
+  "name": "Vang, Olson and Johnson Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  }
+},
+{
+  "_id": "fe8ef812-72dc-4476-b7e1-39952a994b81",
+  "name": "Adams Ltd Amusement Park",
+  "type": "Amusement Park",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  }
+},
+{
+  "_id": "a050d030-f97a-419a-b6f4-3c96d5ac2947",
+  "name": "Bender Ltd Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  }
+},
+{
+  "_id": "7f50e282-2fd2-4d86-87bc-d293ee467cf0",
+  "name": "Lambert, Brown and Arellano Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  }
+},
+{
+  "_id": "9acadb94-4057-4b16-a72c-70548a212387",
+  "name": "Douglas, Crawford and Davidson Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  }
+},
+{
+  "_id": "fad05835-363b-46c0-87fc-18122ed63392",
+  "name": "Orozco, Cooper and Bowen Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  }
+},
+{
+  "_id": "776c0d01-c3e4-48f8-814c-497596892e82",
+  "name": "Foster, Dean and Lewis Electricity Provider",
+  "type": "Electricity Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  }
+},
+{
+  "_id": "0aa855a2-c1ec-4a53-b38e-eda96a8c337e",
+  "name": "Dixon, Hill and Johnson Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  }
+},
+{
+  "_id": "1294ca13-c578-48a2-b2b3-7d818c7752b3",
+  "name": "Burton Group Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.591Z"
+  }
+},
+{
+  "_id": "8ec7d01b-5dc2-4f9a-a20f-5e06357cb1c8",
+  "name": "Barnett, Shields and Tucker Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  }
+},
+{
+  "_id": "0567d0c9-a6ae-4e0a-b031-ed8712bdeecb",
+  "name": "Gibson-Miller Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  }
+},
+{
+  "_id": "60366e59-cf14-4fd7-b673-754e1983c3ea",
+  "name": "Allen PLC Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  }
+},
+{
+  "_id": "e0e050c0-1f02-49a1-8911-b30dbf139802",
+  "name": "Williams PLC Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  }
+},
+{
+  "_id": "720e8813-01f0-4c25-aa01-28489faa4da8",
+  "name": "Garcia, Phillips and Clark Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  }
+},
+{
+  "_id": "cc628c11-593c-487b-b859-adc29d85de6e",
+  "name": "James, Cross and Mccoy Movie Theater",
+  "type": "Movie Theater",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  }
+},
+{
+  "_id": "bf666d44-69d9-4bbe-8dda-a948c9f6a32b",
+  "name": "Blair Inc Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  }
+},
+{
+  "_id": "9283f399-c208-4aee-9988-aac403c60582",
+  "name": "Dominguez, Taylor and Williams Movie Theater",
+  "type": "Movie Theater",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  }
+},
+{
+  "_id": "bed2e0d1-5bba-4ca1-9dce-7cc381331a16",
+  "name": "Sharp-Gonzalez Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  }
+},
+{
+  "_id": "48923460-08f0-4af3-8283-0650ee47e54f",
+  "name": "Cowan LLC Water Supply",
+  "type": "Water Supply",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  }
+},
+{
+  "_id": "559a6f8f-ed8e-4472-942b-2d0416ddecd4",
+  "name": "Allen, Andrade and Shaw Miscellaneous",
+  "type": "Miscellaneous",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  }
+},
+{
+  "_id": "d0e6becb-4c24-4b0c-bec9-07e6f7127a7a",
+  "name": "Curry, Anderson and Mccoy Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  }
+},
+{
+  "_id": "ade8bf28-2cc0-4a20-961e-814f13a3b704",
+  "name": "Sparks-Pearson Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  }
+},
+{
+  "_id": "7d5c78f3-697f-46f7-9531-f362a820338b",
+  "name": "Patterson, Rice and Brown Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.592Z"
+  }
+},
+{
+  "_id": "8cdc181e-a005-4944-b51b-a8a530d44ae4",
+  "name": "Williams, Baxter and Long Electronics Store",
+  "type": "Electronics Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  }
+},
+{
+  "_id": "e6eb4931-447d-4e88-a715-8e650bf8d73d",
+  "name": "Cox, Nichols and Sawyer Electricity Provider",
+  "type": "Electricity Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  }
+},
+{
+  "_id": "d8184347-3ee4-43e6-81d2-2d00d87da1e2",
+  "name": "Johnson and Sons Electronics Store",
+  "type": "Electronics Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  }
+},
+{
+  "_id": "0473682e-6bd0-4856-b507-b8960d874a30",
+  "name": "Maddox, Wilson and Larson Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  }
+},
+{
+  "_id": "af790279-90d6-4820-b7d8-ba3cf1fe516a",
+  "name": "Hudson-Gibbs Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  }
+},
+{
+  "_id": "52db647f-a363-4a8e-98f8-091a79d64334",
+  "name": "Andrews, Copeland and Whitaker Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  }
+},
+{
+  "_id": "cb6981d2-6d69-4a5f-9298-08b29254585c",
+  "name": "Brown LLC Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  }
+},
+{
+  "_id": "ba575d7b-4e44-4ed2-83fc-3577a26fdba6",
+  "name": "Scott-Sanchez Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  }
+},
+{
+  "_id": "9ffb9864-563d-46ff-951a-3b1e342e3d91",
+  "name": "Fuller, Ballard and Curtis Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  }
+},
+{
+  "_id": "c22a4a01-f838-4905-814a-c9b8ef6dd6c0",
+  "name": "Harvey, Velez and Turner Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  }
+},
+{
+  "_id": "4768279c-81d2-4402-b4e3-e4be12d05956",
+  "name": "Olson Ltd Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  }
+},
+{
+  "_id": "2643bc41-cfb2-4463-9554-bea5c32689da",
+  "name": "Romero and Sons Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  }
+},
+{
+  "_id": "e3a70d55-f8f0-4805-8740-a3c9505e7e2b",
+  "name": "Davis-Stevens Internet Provider",
+  "type": "Internet Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  }
+},
+{
+  "_id": "0cded304-065b-4d68-bc5b-ff1291d46fa8",
+  "name": "Hunter-Watson Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  }
+},
+{
+  "_id": "73613379-4ac4-41c4-88e1-5485af69796a",
+  "name": "Bowers-Brandt Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.593Z"
+  }
+},
+{
+  "_id": "c99015c7-8b25-4db8-9a59-cf91b13887d3",
+  "name": "Rivera, Eaton and Fowler Online Retail",
+  "type": "Online Retail",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "c9be0f61-f489-42fc-aa40-7f1205862b59",
+  "name": "Hensley PLC Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "82da8322-2691-421d-9b30-5f7134dbcfbd",
+  "name": "Williams-Hoffman Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "5955e9ae-9963-4146-b022-771698e25d6b",
+  "name": "Chambers Ltd Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "72150002-a403-49b1-95a8-1420e775c7b3",
+  "name": "Yoder-Frost Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "5806409d-23e1-47ee-9416-e33a40a924d8",
+  "name": "Lee, Kirby and Hopkins Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "0133eecd-ef2a-4297-b854-5eaf55438bd5",
+  "name": "Schwartz and Sons Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "8f6cd712-5980-44fd-ba4b-69f8800e1541",
+  "name": "Drake, Prince and Brown Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "f40dea41-b886-41da-944a-c5241fc8557f",
+  "name": "Smith-Ibarra Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "f9406963-8c84-4cc2-bc5e-f933401509ee",
+  "name": "Rowland-Lewis Water Supply",
+  "type": "Water Supply",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "c64079b5-484c-438a-9fa0-85d3952384ce",
+  "name": "Woodard-Johns Miscellaneous",
+  "type": "Miscellaneous",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "daedfd9f-9164-4a93-b21d-ff34e2b17655",
+  "name": "Jacobs-Price Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "26fe87e4-d362-4d52-a06c-d0dd6e7f0b90",
+  "name": "Blair and Sons Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "25d1b3f6-2e0e-46eb-bc9d-939882249de3",
+  "name": "Walker Group Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "31486fc4-e955-43fd-8445-131d9c4eaf62",
+  "name": "Mitchell PLC Water Supply",
+  "type": "Water Supply",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "36bd5d79-e6dc-412f-9726-4bac3bd01e97",
+  "name": "Howell-Bradley Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "7f23b9f3-d3fb-450c-ba72-4bab0334a448",
+  "name": "Jefferson-Schultz Amusement Park",
+  "type": "Amusement Park",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.594Z"
+  }
+},
+{
+  "_id": "9e4aa0bd-e36d-46bd-b7e0-151328a1369a",
+  "name": "Campbell Inc Electricity Provider",
+  "type": "Electricity Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  }
+},
+{
+  "_id": "aefdcce7-98a1-44e0-834e-10e8f24a8993",
+  "name": "Dougherty Inc Online Retail",
+  "type": "Online Retail",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  }
+},
+{
+  "_id": "58478478-93a3-4057-8b2c-94af71d30208",
+  "name": "Williams, Blake and Ford Mobile Recharge",
+  "type": "Mobile Recharge",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  }
+},
+{
+  "_id": "3a6517ce-39f9-4b2d-97de-a889a06826c1",
+  "name": "Patterson-Lewis Miscellaneous",
+  "type": "Miscellaneous",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  }
+},
+{
+  "_id": "1bd76b4b-ef57-4a75-8337-e609ac59d517",
+  "name": "Williams, Bolton and Walsh Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  }
+},
+{
+  "_id": "cf01594e-2ac2-4fb9-8b28-6e500accfe4c",
+  "name": "Carter, Garcia and Gomez Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  }
+},
+{
+  "_id": "f8526bad-21a3-4523-9eae-88e386ccaeab",
+  "name": "Peters Group Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  }
+},
+{
+  "_id": "10d0d19a-b429-4809-8e92-d23261b78a79",
+  "name": "Hernandez-Nguyen Bakery",
+  "type": "Bakery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  }
+},
+{
+  "_id": "d0f89024-b8ae-4d95-a2f0-54c705cf8383",
+  "name": "Thomas, Gray and Knight Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  }
+},
+{
+  "_id": "7707068a-6674-47e8-93c8-f950c72a3ee1",
+  "name": "Terrell, Werner and Jackson Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  }
+},
+{
+  "_id": "665160b5-ef55-4744-9f18-a665bbf365b8",
+  "name": "Steele-Hernandez Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  }
+},
+{
+  "_id": "e4ba36e8-b163-4b9d-8064-29f80e30fd67",
+  "name": "Adams-Donovan Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  }
+},
+{
+  "_id": "b4b8ba9e-bfb3-4023-a44c-d77493a93545",
+  "name": "Odonnell, Conley and Robinson Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  }
+},
+{
+  "_id": "d95cd383-3481-4150-bc9d-3429e2df527b",
+  "name": "Jones-Bennett Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.595Z"
+  }
+},
+{
+  "_id": "dea58560-d14b-45d9-befd-da8abe244437",
+  "name": "Ortiz, Miller and Martinez Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "6336dbfe-ee19-4998-b467-e8ad1b66f8d7",
+  "name": "Ford, Hunt and Cardenas Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "c2f9141c-1eb2-457a-9bdd-319b1e7047df",
+  "name": "Brady and Sons Bakery",
+  "type": "Bakery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "ceb210c5-b41c-4cd2-9d37-70b7e8ec3659",
+  "name": "Barnett-Riley Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "5780ce6a-1a91-44c0-8ca2-45a345071379",
+  "name": "Green LLC Amusement Park",
+  "type": "Amusement Park",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "d617ada6-5bd1-4988-88fe-856f98e7b4f2",
+  "name": "Dorsey, Atkinson and Thompson Electricity Provider",
+  "type": "Electricity Provider",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "05e5f201-3403-4747-874c-471291cb92a9",
+  "name": "Knox, Horton and Johnson Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "be8c3eb7-fed7-42b2-9eff-93e83ab0f01b",
+  "name": "Ward-Rose Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "90d64c23-4722-490e-969c-fd9f38d26f61",
+  "name": "Cummings LLC Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "c1edfd71-bfeb-4c57-b7e7-6d16d552e8e7",
+  "name": "Chang Group Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "aeb58620-c7f9-479d-a4fa-d87f75c553e1",
+  "name": "Mcdowell-Washington Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "35206d44-97ca-4f9e-9e18-296e61f3e437",
+  "name": "Reed-Adams Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "d98875b1-d384-4f4f-a410-f13d0cb97da2",
+  "name": "Rocha, Harper and Jimenez Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "b7a3492e-c850-482b-ba79-e1348e3d1e32",
+  "name": "Moore and Sons Fast Food",
+  "type": "Fast Food",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "101ad9e7-080e-4aea-9e64-1e06f731eb2b",
+  "name": "Livingston LLC Bookstore",
+  "type": "Bookstore",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "dea0f77d-2ead-4f16-8dc0-051d19fe7aec",
+  "name": "Turner-Mills Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "af5a2c16-cf1a-4a13-981f-afeed823defe",
+  "name": "Oliver, Bush and Cardenas Hotel",
+  "type": "Hotel",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "98d79c81-c4f4-4584-b7e8-2f0baf42cfe1",
+  "name": "Moran PLC Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.596Z"
+  }
+},
+{
+  "_id": "fc92bfcd-8f16-4bb1-ba64-b6c63255fcbc",
+  "name": "Owens-Gonzalez Amusement Park",
+  "type": "Amusement Park",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  }
+},
+{
+  "_id": "78bab8fc-1c28-4752-9854-6524ce07f3f1",
+  "name": "Hebert, Howard and Cook Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  }
+},
+{
+  "_id": "d15f7826-f288-436f-8bf8-d4842be11911",
+  "name": "Brown, Gallegos and Parrish Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  }
+},
+{
+  "_id": "b43a8ed1-cb9f-4900-b650-95f6fda5f758",
+  "name": "Hutchinson-Smith Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  }
+},
+{
+  "_id": "9a53d5e8-e8d6-40e1-bfaa-47a9c5e9b6f3",
+  "name": "Murray, Pearson and Durham Restaurant",
+  "type": "Restaurant",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  }
+},
+{
+  "_id": "41ef1fb5-c95b-4ffb-8b0c-c5d00efea42b",
+  "name": "Jones LLC Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  }
+},
+{
+  "_id": "a108b681-8e34-433f-bdee-c23f8b5a6bde",
+  "name": "Heath, Donaldson and Evans Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  }
+},
+{
+  "_id": "f0ead74c-3f08-48b0-a5eb-4fbcf65cca02",
+  "name": "Walker PLC Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  }
+},
+{
+  "_id": "e57dc346-4b73-4ef8-8d8b-50a50e757340",
+  "name": "Harris, Nguyen and Lopez Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  }
+},
+{
+  "_id": "8b8192bb-2893-472a-82d7-f5955f212fce",
+  "name": "Stephens-Perry Concert Venue",
+  "type": "Concert Venue",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  }
+},
+{
+  "_id": "e74ebd7c-8313-4d49-a1aa-aea16af89d87",
+  "name": "Thompson Group Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  }
+},
+{
+  "_id": "a618f86c-7eba-497e-ab9a-3095fc5d478d",
+  "name": "Owen, Chambers and Love Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  }
+},
+{
+  "_id": "bbe0df05-4938-4e45-926a-f45f14e12ad7",
+  "name": "Rodriguez PLC Food Delivery",
+  "type": "Food Delivery",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  }
+},
+{
+  "_id": "c19e87b1-bb91-42b4-8c03-9028ced3fa80",
+  "name": "Guerrero, Payne and Robinson Cafe",
+  "type": "Cafe",
+  "category": "Food",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  }
+},
+{
+  "_id": "6a89a53d-3ac9-490f-b01a-b7ae2d8a3fee",
+  "name": "Ortiz PLC Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.597Z"
+  }
+},
+{
+  "_id": "66bcba77-4021-4281-a13f-a1daa0f09fbb",
+  "name": "Lopez, Newton and Phelps Water Supply",
+  "type": "Water Supply",
+  "category": "Utilities",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "093b86e8-82d0-4ceb-84f3-713bdfc414f8",
+  "name": "Skinner PLC Miscellaneous",
+  "type": "Miscellaneous",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "5c0fb297-8386-4199-b245-6673fbafe76d",
+  "name": "Hendrix-Padilla Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "8d791235-84aa-46c2-ace8-6d991c38c1f5",
+  "name": "Tate-Smith Gym",
+  "type": "Gym",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "c91b0dfd-aa1a-44b5-a2d9-329d3190a323",
+  "name": "Lewis-Mckinney Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "48860fdb-34de-44f0-bcff-2f0f0239c903",
+  "name": "Buchanan Ltd Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "ec640b8a-02cb-4c02-baf1-1d5d090e07ce",
+  "name": "Bird Ltd Streaming Service",
+  "type": "Streaming Service",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "af3bace0-97c8-44be-b3fd-303b54568fd7",
+  "name": "Gonzalez PLC Clothing Store",
+  "type": "Clothing Store",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "c52bd84b-bfe3-4e3f-9c75-701c5f59e360",
+  "name": "Hebert-Perez Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "4feb6341-b0e9-40bb-bc81-fd3a5725ff3e",
+  "name": "Juarez PLC Car Rental",
+  "type": "Car Rental",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "0c6479c9-e46b-4118-9f9d-e019f566862d",
+  "name": "Hatfield, Cameron and Thomas Amusement Park",
+  "type": "Amusement Park",
+  "category": "Entertainment",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "f6992373-ca0c-4164-b6a3-24206c8e4b7b",
+  "name": "Soto PLC Gas Station",
+  "type": "Gas Station",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "70fd80ce-931b-4b9c-9c4b-443f9e4daf12",
+  "name": "Rodriguez LLC Travel Agency",
+  "type": "Travel Agency",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "2796a10a-9503-4324-95d5-a98081b094ef",
+  "name": "Rodriguez LLC Airline",
+  "type": "Airline",
+  "category": "Travel",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "a7f1e75e-6d3e-43fe-b172-5c20371514a3",
+  "name": "Mcclain-Hanson Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "0c83a2e8-0a19-4ba7-bdcb-b48e4067031f",
+  "name": "Turner, Rivera and Stephenson Charity",
+  "type": "Charity",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "f468524e-a298-4c0e-a146-78000d3a90ce",
+  "name": "Mendez PLC Miscellaneous",
+  "type": "Miscellaneous",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "f90048e1-4c0a-46de-9c35-a5b30c1b1d01",
+  "name": "Garcia-White Fuel Pump",
+  "type": "Fuel Pump",
+  "category": "Petrol",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "0369e50b-ac1d-4834-ac0b-db3741240c9a",
+  "name": "Houston-Jefferson Spa",
+  "type": "Spa",
+  "category": "Others",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.598Z"
+  }
+},
+{
+  "_id": "cfb52ed6-3f59-4c1a-a443-b51d5a371e7f",
+  "name": "Washington-Lowe Supermarket",
+  "type": "Supermarket",
+  "category": "Shopping",
+  "created_at": {
+    "$date": "2025-07-30T17:52:20.599Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-30T17:52:20.599Z"
+  }
+}]
