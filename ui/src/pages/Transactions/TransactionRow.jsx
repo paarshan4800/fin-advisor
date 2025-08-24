@@ -52,19 +52,24 @@ function TransactionRow({ r }) {
 
         <TableCell>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
-            <Typography variant="body2" sx={{ fontWeight: 600 }}>{r.merchant_id}</Typography>
-            {/* <Typography variant="body2" sx={{ fontWeight: 600 }}>
-              {r.merchant}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {r.description}
-            </Typography> */}
+            {r.to_account && (
+              <Typography variant="body2" sx={{ fontWeight: 600 }}>
+                {r.to_account.user.name}
+              </Typography>
+            )}
+            {r.merchant && (
+              <Typography variant="body2" sx={{ fontWeight: 600 }}>
+                {r.merchant.name}
+              </Typography>
+            )}
           </Box>
         </TableCell>
 
         <TableCell>{r.transaction_mode}</TableCell>
 
-        <TableCell sx={{ textTransform: "capitalize" }}>{r.transaction_type}</TableCell>
+        <TableCell sx={{ textTransform: "capitalize" }}>
+          {r.transaction_type}
+        </TableCell>
 
         <TableCell align="right" sx={{ fontVariantNumeric: "tabular-nums" }}>
           {currency.format(r.amount)}
@@ -84,4 +89,4 @@ function TransactionRow({ r }) {
   );
 }
 
-export default TransactionRow
+export default TransactionRow;

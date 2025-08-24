@@ -1,8 +1,7 @@
 from db.connection import mongo_conn
 from utils.logger import setup_logger
-from pymongo import DESCENDING
-from bson import ObjectId, Decimal128
 from datetime import datetime
+from pymongo import ASCENDING, DESCENDING
 from utils.mongo_utils import serialize
 
 logger = setup_logger(__name__)
@@ -16,7 +15,6 @@ def build_query(user_id: str, criteria: dict):
 
     query = {"user_id": user_id}
 
-    # Handle date filters
     if from_date or to_date:
         query["initiated_at"] = {}
         if from_date:
@@ -24,55 +22,178 @@ def build_query(user_id: str, criteria: dict):
         if to_date:
             query["initiated_at"]["$lte"] = datetime.fromisoformat(to_date)
 
-    # Handle status filter
     if status:
         query["status"] = status
-
-    # Handle transaction mode filter
     if transaction_mode:
         query["transaction_mode"] = transaction_mode
-
-    # Handle transaction type filter
     if transaction_type:
         query["transaction_type"] = transaction_type
-
-    print("query", query)
 
     return query
 
 
 def get_transactions(user_id: str, criteria: dict):
+    """
+    Returns paginated transactions enriched with:
+      - merchant
+      - from_account
+      - to_account (with nested user)
+    """
     try:
-        
-        page_size = criteria.get('pageSize', 25)
-        page_number = criteria.get('pageNumber', 1)
+        page_size = int(criteria.get("pageSize", 25))
+        page_number = int(criteria.get("pageNumber", 1))
+        skip_count = max(page_number - 1, 0) * page_size
 
         query = build_query(user_id, criteria)
 
         db = mongo_conn.connect()
-        collection = db.transactions
+        tx = db.transactions
 
-        total_records = collection.count_documents(query)
+        pipeline = [
+            {"$match": query},
+            {
+                "$facet": {
+                    "items": [
+                        {"$sort": {"initiated_at": DESCENDING}},
+                        {"$skip": skip_count},
+                        {"$limit": page_size},
 
-        skip_count = (page_number - 1) * page_size
+                        # merchant details
+                        {
+                            "$lookup": {
+                                "from": "merchants",
+                                "localField": "merchant_id",
+                                "foreignField": "_id",
+                                "as": "merchant",
+                            }
+                        },
+                        {"$unwind": {"path": "$merchant", "preserveNullAndEmptyArrays": True}},
 
-        cursor = (
-            collection.find(query)
-            .sort("initiated_at", DESCENDING)
-            .skip(skip_count)
-            .limit(page_size)
-        )
+                        # from_account details
+                        {
+                            "$lookup": {
+                                "from": "accounts",
+                                "localField": "from_account_id",
+                                "foreignField": "_id",
+                                "as": "from_account",
+                            }
+                        },
+                        {"$unwind": {"path": "$from_account", "preserveNullAndEmptyArrays": True}},
 
-        results = [serialize(doc) for doc in cursor]
-        
+                        # to_account details + nested user
+                        {
+                            "$lookup": {
+                                "from": "accounts",
+                                "let": {"acc_id": "$to_account_id"},
+                                "pipeline": [
+                                    {"$match": {"$expr": {"$eq": ["$_id", "$$acc_id"]}}},
+                                    {
+                                        "$lookup": {
+                                            "from": "users",
+                                            "localField": "user_id",
+                                            "foreignField": "_id",
+                                            "as": "user",
+                                        }
+                                    },
+                                    {"$unwind": {"path": "$user", "preserveNullAndEmptyArrays": True}},
+                                    # keep only useful account+user fields
+                                    {
+                                        "$project": {
+                                            "_id": 1,
+                                            "account_number": 1,
+                                            "user_id": 1,
+                                            "user": {
+                                                "_id": 1,
+                                                "name": 1,
+                                                "email": 1,
+                                                "created_at": 1,
+                                                "updated_at": 1,
+                                            },
+                                        }
+                                    },
+                                ],
+                                "as": "to_account",
+                            }
+                        },
+                        {"$unwind": {"path": "$to_account", "preserveNullAndEmptyArrays": True}},
+
+                        # shape the final transaction document
+                        {
+                            "$project": {
+                                "_id": 1,
+                                "transaction_id": 1,
+                                "user_id": 1,
+                                "from_account_id": 1,
+                                "to_account_id": 1,
+                                "merchant_id": 1,
+                                "amount": 1,
+                                "currency": 1,
+                                "transaction_type": 1,
+                                "transaction_mode": 1,
+                                "status": 1,
+                                "initiated_at": 1,
+                                "completed_at": 1,
+                                "failed_at": 1,
+                                "remarks": 1,
+                                "description": 1,
+                                "reference_number": 1,
+                                "order_id": 1,
+                                "created_at": 1,
+                                "updated_at": 1,
+
+                                "merchant": {
+                                    "_id": "$merchant._id",
+                                    "name": "$merchant.name",
+                                    "type": "$merchant.type",
+                                    "category": "$merchant.category",
+                                },
+                                "from_account": {
+                                    "_id": "$from_account._id",
+                                    "account_number": "$from_account.account_number",
+                                    "user_id": "$from_account.user_id",
+                                },
+                                "to_account": "$to_account",  # already projected above
+                            }
+                        },
+                    ],
+                    "count": [
+                        {"$count": "total_records"}
+                    ],
+                }
+            },
+            {
+                "$project": {
+                    "items": 1,
+                    "total_records": {
+                        "$ifNull": [{"$arrayElemAt": ["$count.total_records", 0]}, 0]
+                    },
+                }
+            },
+        ]
+
+        agg = list(tx.aggregate(pipeline, allowDiskUse=True))
+        if not agg:
+            return {
+                "items": [],
+                "total_records": 0,
+                "page_number": page_number,
+                "page_size": page_size,
+                "total_pages": 0,
+            }
+
+        items = agg[0].get("items", [])
+        total_records = int(agg[0].get("total_records", 0))
+
+        items = [serialize(doc) for doc in items]
+
         return {
-            "items": results,
+            "items": items,
             "total_records": total_records,
             "page_number": page_number,
             "page_size": page_size,
-            "total_pages": (total_records + page_size - 1) // page_size
+            "total_pages": (total_records + page_size - 1) // page_size,
         }
 
     except Exception as e:
-        logger.error(f"MongoDB query failed: {e}")
+        logger.exception(f"MongoDB aggregation failed: {e}")
         return {"error": str(e)}

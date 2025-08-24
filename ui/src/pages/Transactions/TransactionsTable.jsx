@@ -54,7 +54,7 @@ export default function TransactionsTable({ rows = [], totalRecords, fetchTransa
             <TableRow>
               <TableCell /> {/* expander column */}
               <TableCell>Date</TableCell>
-              <TableCell>Merchant</TableCell>
+              <TableCell>Recipient</TableCell>
               <TableCell>Mode</TableCell>
               <TableCell>Type</TableCell>
               <TableCell align="right">Amount</TableCell>
