@@ -2,8 +2,12 @@ import React from "react";
 import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
 import { SavingsOutlined } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+import CurrentUserPicker from "./CurrentUserPicker";
+import { useUser } from "../context/UserContext";
 
-const AppNavBar = () => {
+const AppNavBar = ({ usersData }) => {
+  const { user, setUser } = useUser();
+
   return (
     <AppBar position="static" color="transparent" elevation={0}>
       <Toolbar>
@@ -24,7 +28,13 @@ const AppNavBar = () => {
         </Box>
 
         <Box sx={{ flexGrow: 1 }} />
-
+        <Box mx={2}>
+          <CurrentUserPicker
+            users={usersData}
+            currentUser={user}
+            onChange={(user) => setUser(user)}
+          />
+        </Box>
         <Button
           component={Link}
           to="/insights-hub"

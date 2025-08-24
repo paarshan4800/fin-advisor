@@ -3,6 +3,7 @@ from flask_cors import CORS
 from config.settings import settings
 from routes.transactions import transactions_bp
 from routes.insights import insights_bp
+from routes.users import users_bp
 from db.connection import mongo_conn
 from utils.logger import setup_logger
 from utils.context import current_user_id
@@ -20,6 +21,7 @@ def create_app() -> Flask:
     # Register blueprints
     app.register_blueprint(insights_bp, url_prefix='/api/insights')
     app.register_blueprint(transactions_bp, url_prefix='/api/transactions')
+    app.register_blueprint(users_bp, url_prefix='/api/users')
     
     # Global error handlers
     @app.errorhandler(404)
@@ -47,9 +49,11 @@ def create_app() -> Flask:
     def attach_user_id():
         if request.method == "OPTIONS":
             return ("", 204)
-        payload = request.json or {}
-        uid = payload.get("userId") or payload.get("session_id")
-        current_user_id.set(uid)
+        
+        if request.method == "POST":
+            payload = request.json or {}
+            uid = payload.get("userId") or payload.get("session_id")
+            current_user_id.set(uid)
 
     @app.teardown_request
     def clear_user_id(exc):

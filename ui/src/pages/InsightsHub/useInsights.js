@@ -1,41 +1,40 @@
-import React, { useState } from 'react'
-import { useUser } from '../../context/UserContext'
-import api from '../../api'
+import React, { useState } from "react";
+import { useUser } from "../../context/UserContext";
+import api from "../../api";
 
 function useInsights() {
+  const [insightsData, setinsightsData] = useState(null);
+  const [insightsLoading, setinsightsLoading] = useState(false);
+  const [insightsError, setinsightsError] = useState(null);
 
-    const [insightsData, setinsightsData] = useState(null)
-    const [insightsLoading, setinsightsLoading] = useState(false)
-    const [insightsError, setinsightsError] = useState(null)
+  const INSIGHTS_URI = "/query";
 
-    const INSIGHTS_URI = "/query"
+  const { user } = useUser();
 
-    const { userId } = useUser()
+  const fetchInsights = async (query) => {
+    setinsightsLoading(true);
 
-    const fetchInsights = async (query) => {
-        setinsightsLoading(true)
+    try {
+      const payload = {
+        session_id: user._id,
+        query: query,
+      };
+      const resp = await api.post(INSIGHTS_URI, payload);
 
-        try {
-            const payload = {
-                "session_id": userId,
-                "query": query
-            }
-            const resp = await api.post(INSIGHTS_URI, payload)
-
-            setinsightsData(resp.data)
-        } catch (e) {
-            setinsightsError(e.message)
-        } finally {
-            setinsightsLoading(false)
-        }
+      setinsightsData(resp.data);
+    } catch (e) {
+      setinsightsError(e.message);
+    } finally {
+      setinsightsLoading(false);
     }
+  };
 
-    return {
-        insightsData,
-        insightsLoading,
-        insightsError,
-        fetchInsights
-    }
+  return {
+    insightsData,
+    insightsLoading,
+    insightsError,
+    fetchInsights,
+  };
 }
 
-export default useInsights
+export default useInsights;

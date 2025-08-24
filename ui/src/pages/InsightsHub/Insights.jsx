@@ -1,11 +1,11 @@
 import React from "react";
 import { Box, Stack, Button } from "@mui/material";
-import AppPieChart from "../../components/AppPieChart";
+import AppPieChart from "../../components/Visualizations/AppPieChart";
 import InsightsCard from "../../components/InsightsCard";
 import RefreshIcon from "@mui/icons-material/Refresh";
-import AppBarChart from "../../components/AppBarChart";
-import AppLineChart from "../../components/AppLineChart";
-import AppTable from "../../components/AppTable";
+import AppBarChart from "../../components/Visualizations/AppBarChart";
+import AppLineChart from "../../components/Visualizations/AppLineChart";
+import AppTable from "../../components/Visualizations/AppTable";
 
 function Insights(props) {
   const { data, onTryAnother } = props;
