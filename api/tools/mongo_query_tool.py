@@ -21,8 +21,15 @@ class MongoQueryToolInput(BaseModel):
             "For date filtering, use 'initiated_at' with $gte and $lt as ISO-8601 strings."
         )
     )
+    query_projection: Any = Field(
+        ...,
+        description=(
+            "MongoDB projection object (dict preferred) or a JSON string. "
+            "Usually the direct output of the mongo projection tool."
+        )
+    )    
 
-def _mongo_query(query_filter: Any) -> Dict[str, Any]:
+def _mongo_query(query_filter: Any, query_projection: Any) -> Dict[str, Any]:
     """Execute MongoDB query using provided filter"""
     logger.info(f"[mongo_query_tool]: Running MongoDB query with filter: {query_filter}")
 
@@ -35,7 +42,11 @@ def _mongo_query(query_filter: Any) -> Dict[str, Any]:
         # Parse string input to dict if needed
         if isinstance(query_filter, str):
             query_filter = json.loads(query_filter)
-
+        if isinstance(query_projection, str):
+            query_projection = json.loads(query_projection)
+        if not isinstance(query_projection, dict):
+            raise ValueError("query_projection must be a dict or JSON string representing a dict")
+        
         mongo_query_filter = copy.deepcopy(query_filter)
         
         # Add user_id filter
@@ -52,22 +63,10 @@ def _mongo_query(query_filter: Any) -> Dict[str, Any]:
         db = mongo_conn.connect()
         collection = db.transactions
 
-        projection = {
-            "_id": 0,
-            "transaction_id": 1,
-            "merchant_id": 1,
-            "amount": 1,
-            "currency": 1,
-            "transaction_type": 1,
-            "transaction_mode": 1,
-            "status": 1,
-            "initiated_at": 1,
-            "remarks": 1,
-            "description": 1
-        }
+        projection = query_projection
 
         # Run the dynamic query
-        results = list(collection.find(mongo_query_filter, projection).sort("initiated_at", -1))
+        results = list(collection.find(mongo_query_filter, projection).sort("initiated_at", -1).limit(10))
 
         total_amount = sum(t.get("amount", 0) for t in results)
         transaction_count = len(results)

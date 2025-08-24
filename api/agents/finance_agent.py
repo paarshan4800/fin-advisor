@@ -9,11 +9,13 @@ from tools.mongo_query_tool import get_mongo_query_tool
 from tools.category_mapper import get_category_mapper_tool
 from tools.chart_data_preparer import get_chart_data_preparer_tool
 from tools.query_filter_extractor import get_query_filter_extractor_tool
+from tools.mongo_projection_tool import get_mongo_projection_tool
 from agents.memory import conversation_memory
 from utils.logger import setup_logger
 from agents.llm import llm
 from utils.json_formatter import _finalize_json
 from utils.helper import enhance_response
+from agents.prompt import FINANCE_AGENT_SYSTEM_PROMPT
 
 logger = setup_logger(__name__)
 
@@ -41,48 +43,13 @@ class FinanceAgent:
             get_mongo_query_tool(),
             get_category_mapper_tool(),
             get_chart_data_preparer_tool(),
-            get_query_filter_extractor_tool()
+            get_query_filter_extractor_tool(),
+            get_mongo_projection_tool()
         ]
     
     def _create_agent(self):
         """Create the finance agent with tools"""
-        system_prompt = """You are a helpful financial assistant. You can:
-        1. Extract date ranges from natural language
-        2. Query financial transaction data
-        3. Categorize spending and identify patterns
-        4. Prepare data for charts and tables
-
-        CRITICAL: When you need data or filters, CALL TOOLS instead of writing JSON yourself.
-
-        FINAL ANSWER FORMAT (respond ONLY in valid JSON for the final turn):
-        - type: "table" or "chart"
-        - chartType: "bar", "line", "pie", or "scatter" (if type is chart)
-        - text_summary: Natural language summary
-        - data: Formatted data for rendering
-
-        Tool usage order (adapt as needed):
-        - If the user asks anything about spending/transactions/money sent or otherwise needs data:
-        1. Call `query_filter_extractor` to get filters.
-        2. Call `mongo_query_tool` with those filters to fetch transactions.
-        3. If the user's request implies categorization (e.g., breakdown by category, patterns, recs), call `category_mapper`.
-        4. Call `chart_data_preparer` to produce the FINAL JSON.
-
-        When calling `chart_data_preparer`, you MUST pass:
-        {{
-        "handle": Handle returned by mongo_query_tool,
-        "raw_data": <optional LIST of transaction records from mongo_query_tool>,
-        "preferred_chart": <optional>,
-        "objective": reason for aggregating data,
-        "category_result": <optional; the entire output from category_mapper must be passed if it was used>
-        }}
-
-        Important rules:
-        - Do NOT fabricate data—use tools to get it.
-        - If `mongo_query_tool` returns no rows, return a minimal table with an explanatory text_summary.
-        - Keep summaries conversational but concise.
-        - Do not include any JSON in regular chat/tool-call turns; ONLY the final assistant turn should be JSON.
-        """
-
+        system_prompt = FINANCE_AGENT_SYSTEM_PROMPT
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
             MessagesPlaceholder("chat_history", optional=True),
@@ -127,11 +94,12 @@ class FinanceAgent:
             if isinstance(resp, dict) and "visualization" in resp and "text_summary" in resp["visualization"]:
                 conversation_memory.add_interaction(session_id, user_input, resp["visualization"]["text_summary"])            
 
-            logger.info(f"Query processed successfully: {resp["visualization"]['type']}")
+            # logger.info(f"Query processed successfully: {resp["visualization"]['type']}")
+            logger.info(f"Query processed successfully")
             return resp
             
         except Exception as e:
-            logger.error(f"Error processing query: {e}")
+            logger.exception(f"Error processing query: {e}")
             return self._error_response(str(e), user_input)
     
     def _error_response(self, error_message: str, user_input: str) -> Dict[str, Any]:

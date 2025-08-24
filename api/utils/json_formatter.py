@@ -47,7 +47,7 @@ def _finalize_json(draft_text: str) -> Dict[str, Any]:
 
     {{
     "type": "table" | "chart",
-    "chartType": "bar" | "line" | "pie" | "scatter" | null,
+    "chartType": "bar" | "line" | "pie" | null,
     "text_summary": string,
     "data": any
     }}

@@ -1,46 +1,35 @@
 from langchain.tools import StructuredTool
 from pydantic import BaseModel, Field, model_validator
-from typing import Dict, Any, List, Union, Optional
+from typing import Dict, Any
 from utils.logger import setup_logger
 from agents.llm import llm
 import json
-from utils.helper import _coerce_transactions, _load_data_from_handle
+from utils.helper import _load_data_from_handle
 
 logger = setup_logger(__name__)
 
 class CategoryMapperInput(BaseModel):
-    handle: Optional[str] = Field(
-        None,
-        description="Handle returned by mongo_query_tool. If provided, data will be loaded from Redis cache."
-    )
-    transaction_data: Optional[Union[str, List[Dict[str, Any]], Dict[str, Any]]] = Field(
+    handle: str = Field(
         ...,
         description=(
-            "(Optional) User's transactions data as a list of dicts (preferred) or JSON string."
-            "Should contain details like merchant, description, amount, date, etc."
-            "It should not be sample data"
+            "REQUIRED. Handle returned by mongo_query_tool. "
+            "This handle is used to fetch transaction data from Redis cache. "
+            "Without this, the tool cannot analyze categories."
         )
     )
 
     @model_validator(mode='after')
     def validate_input(self):
-        h, td = self.handle, self.transaction_data
-        if not h and td is None:
-            raise ValueError("Provide either 'handle' or 'transaction_data'.")
+        if not self.handle:
+            raise ValueError("Field 'handle' is required and cannot be empty.")
         return self
     
 
-def _map_categories(handle: Optional[str] = None,
-                    transaction_data: Optional[Union[str, List[Dict[str, Any]], Dict[str, Any]]] = None,
-                    ) -> Dict[str, Any]:
-    """Tool for mapping and analyzing spending categories using LLM, sourcing data by handle when available."""
+def _map_categories(handle: str) -> Dict[str, Any]:
 
     logger.info("Calling LLM to map transaction categories")
 
-    if handle:
-        data = _load_data_from_handle(handle)
-    else:
-        data = _coerce_transactions(transaction_data)
+    data = _load_data_from_handle(handle)
 
     if not data:
         return {
@@ -87,13 +76,13 @@ def _map_categories(handle: Optional[str] = None,
 
 
 def get_category_mapper_tool() -> StructuredTool:
-    """Create category mapping tool that prefers Redis handle but can accept raw data."""
 
     return StructuredTool.from_function(
         name="category_mapper",
         description=(
-            "Analyzes transactions to produce category mapping, unnecessary spending patterns, and recommendations. "
-            "Prefer passing a 'handle' (from mongo_query_tool). Optionally accepts raw 'transaction_data'. Doesn't accept sample data"
+            "Analyzes transaction data (fetched using the provided handle) "
+            "to generate category mappings, identify unnecessary spending patterns,and suggest recommendations. "
+            "REQUIRES a valid 'handle' from mongo_query_tool."
         ),
         func=_map_categories,
         args_schema=CategoryMapperInput,

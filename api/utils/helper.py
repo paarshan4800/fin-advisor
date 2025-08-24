@@ -3,6 +3,7 @@ import hashlib, json
 from utils.redis_utils import redis_client
 from datetime import datetime, timezone
 from bson import ObjectId, Decimal128
+import math
 
 def _make_handle(query_filter: Dict[str, Any], projection: Dict[str, int], now_iso: str) -> str:
     # Stable hash of filter+projection+timestamp to avoid collisions but enable idempotency windows if needed
@@ -33,7 +34,6 @@ def _load_data_from_handle(handle: str) -> List[Dict[str, Any]]:
     payload = json.loads(cached)
     # We stored the full rows under "data" in mongo_query_tool
     return payload.get("data", [])
-
 
 def _clean_for_json(doc: Dict[str, Any]) -> Dict[str, Any]:
     # Convert Mongo types to JSON-safe primitives
@@ -82,7 +82,6 @@ def steps_by_tool(intermediate_steps):
         }
     return out
 
-
 def enhance_response(result):
     resp = {}
 
@@ -103,3 +102,57 @@ def enhance_response(result):
     resp['analysis'] = get_analysis(tool_outputs.get("category_mapper", {}))
 
     return resp
+
+def _canon_label(s: Any) -> str:
+    """Normalize label and collapse variants to 'Other'."""
+    if s is None:
+        return "Other"
+    s = str(s).strip()
+    lower = s.lower()
+    if lower in {"other", "others", "misc", "miscellaneous", "uncategorized", "unknown", "general", "remaining", "rest"}:
+        return "Other"
+    return s
+
+def normalize_chart_result(result: Dict[str, Any], max_buckets: int = 12) -> Dict[str, Any]:
+    """
+    Normalize the LLM chart/table payload in-place-ish (returns a new dict):
+      - pie/bar/line: merge duplicate labels, canonicalize 'Other', cap buckets (top 11 + Other), 'Other' last
+      - table: unchanged
+    Safe to call even if keys are missing.
+    """
+    if not isinstance(result, dict) or result.get("type") != "chart":
+        return result
+
+    chart_type = result.get("chartType")
+    data = result.get("data") or []
+
+    if chart_type in ("pie", "bar", "line"):
+        sums: Dict[str, float] = {}
+        for item in data:
+            label = _canon_label(item.get("label"))
+            try:
+                v = float(item.get("value", 0))
+                if math.isnan(v) or math.isinf(v) or v <= 0:
+                    continue
+            except Exception:
+                continue
+            sums[label] = sums.get(label, 0.0) + v
+
+        other_val = sums.pop("Other", 0.0)
+
+        series = [{"label": k, "value": round(v, 2)} for k, v in sums.items() if v > 0]
+        series.sort(key=lambda x: x["value"], reverse=True)
+
+        if max_buckets and len(series) > max_buckets - 1:
+            head = series[: max_buckets - 1]
+            tail_sum = sum(x["value"] for x in series[max_buckets - 1 :])
+            series = head
+            other_val += tail_sum
+
+        if other_val > 0:
+            series.append({"label": "Other", "value": round(other_val, 2)})
+
+        result = {**result, "data": series}
+
+    # table → unchanged
+    return result
