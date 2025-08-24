@@ -1,7 +1,8 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from config.settings import settings
-from routes.api import api_bp
+from routes.transactions import transactions_bp
+from routes.insights import insights_bp
 from db.connection import mongo_conn
 from utils.logger import setup_logger
 from utils.context import current_user_id
@@ -17,7 +18,8 @@ def create_app() -> Flask:
     CORS(app)
     
     # Register blueprints
-    app.register_blueprint(api_bp, url_prefix='/api')
+    app.register_blueprint(insights_bp, url_prefix='/api/insights')
+    app.register_blueprint(transactions_bp, url_prefix='/api/transactions')
     
     # Global error handlers
     @app.errorhandler(404)

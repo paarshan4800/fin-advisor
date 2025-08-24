@@ -8,7 +8,7 @@ function useTransactions() {
     const [transactionsLoading, settransactionsLoading] = useState(false)
     const [transactionsError, settransactionsError] = useState(null)
 
-    const TRANSACTIONS_URI = "/transactions"
+    const TRANSACTIONS_URI = "/transactions/get"
 
     const { userId } = useUser()
 

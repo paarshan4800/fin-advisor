@@ -3,13 +3,12 @@ from typing import Dict, Any
 from agents.finance_agent import finance_agent
 from utils.response_formatter import ResponseFormatter
 from utils.logger import setup_logger
-from services.transactions import get_transactions
 
 logger = setup_logger(__name__)
 
-api_bp = Blueprint('api', __name__)
+insights_bp = Blueprint('insights', __name__)
 
-@api_bp.route('/query', methods=['POST'])
+@insights_bp.route('/query', methods=['POST'])
 def process_financial_query() -> Dict[str, Any]:
     """Process financial query endpoint"""
     try:
@@ -48,48 +47,7 @@ def process_financial_query() -> Dict[str, Any]:
             str(e)
         )), 500
     
-@api_bp.route('/transactions', methods=['POST'])
-def transactions() -> Dict[str, Any]:
-    """Get transactions for the give criteria"""
-    try:
-        # Validate request
-        if not request.json:
-            return jsonify(ResponseFormatter.error_response(
-                "Request body must be JSON"
-            )), 400
-        
-        user_id = request.json.get('userId', 'default')
-        
-        if not user_id:
-            return jsonify(ResponseFormatter.error_response(
-                "User ID is required"
-            )), 400
-        
-        payload = request.get_json(silent=True, force=True) or {}
-        
-        logger.info(f"Received request for transactions for session: {user_id}")
-        
-        result = get_transactions(user_id, payload)
-        
-        return jsonify(ResponseFormatter.success_response(result))
-        
-    except Exception as e:
-        logger.error(f"Unexpected error in /transactions endpoint: {e}")
-        return jsonify(ResponseFormatter.error_response(
-            "Internal server error",
-            str(e)
-        )), 500
-
-@api_bp.route('/health', methods=['GET'])
-def health_check() -> Dict[str, Any]:
-    """Health check endpoint"""
-    return jsonify({
-        "status": "healthy",
-        "service": "finance-ai-assistant",
-        "version": "1.0.0"
-    })
-
-@api_bp.route('/memory/<session_id>', methods=['GET'])
+@insights_bp.route('/memory/<session_id>', methods=['GET'])
 def get_conversation_history(session_id: str) -> Dict[str, Any]:
     """Get conversation history for a session"""
     try:
@@ -116,7 +74,7 @@ def get_conversation_history(session_id: str) -> Dict[str, Any]:
             str(e)
         )), 500
 
-@api_bp.route('/memory/<session_id>', methods=['DELETE'])
+@insights_bp.route('/memory/<session_id>', methods=['DELETE'])
 def clear_conversation_history(session_id: str) -> Dict[str, Any]:
     """Clear conversation history for a session"""
     try:
