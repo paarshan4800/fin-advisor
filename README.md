@@ -24,3 +24,18 @@ A Python-based agentic AI app using Flask and LangChain for viewing user transac
 ![Table Insights](/assets/screenshots/table_insights.png)
 ![Pie chart](/assets/screenshots/pie_chart.png)
 ![Bar chart](/assets/screenshots/bar_chart.png)
+
+## Setup
+
+### API setup
+Note:- Mongo and redis setup is required. Create python virtual env if needed.
+- Get into api folder `cd api`
+- Create `.env` file and add required configurations. Refer `.env.example`
+- Install python dependencies/libraries `pip install -r requirements.txt`
+- Run the prepare data script to create data `python setup/prepare-data.py`
+- Run the API server `python app.py`
+
+### UI setup
+- Get into api folder `cd ui`
+- Install npm dependencies/libraries `npm install`
+- Run the UI `npm start`
