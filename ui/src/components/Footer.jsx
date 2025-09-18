@@ -8,7 +8,7 @@ function Footer() {
     return (
         <Box sx={{ py: 4, textAlign: "center", color: "text.secondary" }}>
             <Typography variant="caption">
-                © {new Date().getFullYear()} SpendSmart
+                © {new Date().getFullYear()} FinAdvisor
             </Typography>
         </Box>
     )

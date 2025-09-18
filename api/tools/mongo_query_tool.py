@@ -1,4 +1,3 @@
-# Tool
 from langchain.tools import StructuredTool
 from pydantic import BaseModel, Field, model_validator
 from typing import Optional, Union, Dict, Any
@@ -10,6 +9,7 @@ from config.settings import settings
 from datetime import datetime, timezone
 from utils.helper import _make_handle, _clean_for_json
 from utils.context import current_user_id
+import re
 
 logger = setup_logger(__name__)
 
@@ -18,7 +18,10 @@ class MongoQueryToolInput(BaseModel):
         ...,
         description=(
             "MongoDB filter object (dict preferred) or a JSON string. "
-            "For date filtering, use 'initiated_at' with $gte and $lt as ISO-8601 strings."
+            "For date filtering, use 'initiated_at' with $gte and $lt as ISO-8601 strings. "
+            "For person name search (P2P recipient), include 'counterparty_name': '<name>' (plain text); "
+            "the tool will perform a case-insensitive CONTAINS match on 'to_account.user_name' and require "
+            "'to_account._id' to exist. Example: {'counterparty_name': 'john'}."
         )
     )
     query_projection: Any = Field(
@@ -27,10 +30,11 @@ class MongoQueryToolInput(BaseModel):
             "MongoDB projection object (dict preferred) or a JSON string. "
             "Usually the direct output of the mongo projection tool."
         )
-    )    
+    )
+  
 
 def _mongo_query(query_filter: Any, query_projection: Any) -> Dict[str, Any]:
-    """Execute MongoDB query using provided filter"""
+    
     logger.info(f"[mongo_query_tool]: Running MongoDB query with filter: {query_filter}")
 
     try:
@@ -48,7 +52,16 @@ def _mongo_query(query_filter: Any, query_projection: Any) -> Dict[str, Any]:
             raise ValueError("query_projection must be a dict or JSON string representing a dict")
         
         mongo_query_filter = copy.deepcopy(query_filter)
-        
+
+        # Map counterparty_name to a case-insensitive contains match on the payee side
+        name = mongo_query_filter.pop("counterparty_name", None)
+        if name:
+            mongo_query_filter["to_account.user_name"] = {
+                "$regex": re.escape(name), 
+                "$options": "i"            
+            }
+            mongo_query_filter["to_account._id"] = {"$exists": True}
+
         # Add user_id filter
         mongo_query_filter["user_id"] = user_id
 
@@ -66,19 +79,17 @@ def _mongo_query(query_filter: Any, query_projection: Any) -> Dict[str, Any]:
         projection = query_projection
 
         # Run the dynamic query
-        results = list(collection.find(mongo_query_filter, projection).sort("initiated_at", -1).limit(10))
+        results = list(collection.find(mongo_query_filter, projection).sort("initiated_at", -1).limit(settings.LIMIT_FETCH_ROWS))
 
         total_amount = sum(t.get("amount", 0) for t in results)
         transaction_count = len(results)
 
-        # Clean for JSON (avoid ObjectId/datetime issues)
         cleanedResult = [_clean_for_json(r) for r in results]
 
         logger.info(f"Fetched {transaction_count} transactions for the given filter")
 
         # Compute quick date span & sample
         if transaction_count:
-            # initiated_at are ISO strings after cleaning
             dates = [datetime.fromisoformat(t["initiated_at"]) for t in cleanedResult if t.get("initiated_at")]
             min_date = min(dates).isoformat() if dates else None
             max_date = max(dates).isoformat() if dates else None
@@ -86,7 +97,7 @@ def _mongo_query(query_filter: Any, query_projection: Any) -> Dict[str, Any]:
             min_date = max_date = None
 
         fields = list(projection.keys())
-        fields = [f for f, inc in projection.items() if inc]  # clean include-only
+        fields = [f for f, inc in projection.items() if inc]
 
         sample_n = 3 if transaction_count >= 3 else transaction_count
         sample = cleanedResult[:sample_n]
@@ -94,12 +105,12 @@ def _mongo_query(query_filter: Any, query_projection: Any) -> Dict[str, Any]:
         now_iso = datetime.now(timezone.utc).isoformat()
         handle = _make_handle(query_filter, projection, now_iso)
 
-        # Store full payload in Redis
+        # Redis payload
         cache_payload = {
             "handle": handle,
             "created_at": now_iso,
             "ttl_seconds": settings.REDIS_TTL,
-            "query_filter": query_filter,    # echo original (string dates)
+            "query_filter": query_filter,
             "projection": projection,
             "metrics": {
                 "transaction_count": transaction_count,
@@ -107,7 +118,6 @@ def _mongo_query(query_filter: Any, query_projection: Any) -> Dict[str, Any]:
                 "date_min": min_date,
                 "date_max": max_date,
             },
-            # Store full rows for paging / downstream processing
             "data": cleanedResult,
         }
 
@@ -115,7 +125,6 @@ def _mongo_query(query_filter: Any, query_projection: Any) -> Dict[str, Any]:
 
         logger.info(f"[mongo_query_tool]: stored {transaction_count} rows under {handle}")
 
-        # Return small, LLM-friendly summary
         return {
             "query_type": "dynamic_filter_query",
             "handle": handle,
@@ -127,7 +136,6 @@ def _mongo_query(query_filter: Any, query_projection: Any) -> Dict[str, Any]:
                 "fields": fields,
                 "sample": sample,
             },
-            # Optional echo for traceability (small)
             "query_echo": {
                 "filter": query_filter,
                 "projection": projection,
@@ -140,7 +148,6 @@ def _mongo_query(query_filter: Any, query_projection: Any) -> Dict[str, Any]:
 
 
 def get_mongo_query_tool() -> StructuredTool:
-    """Create tool for querying MongoDB transactions using structured filters"""
 
     return StructuredTool.from_function(
         name="mongo_query_tool",
@@ -149,6 +156,7 @@ def get_mongo_query_tool() -> StructuredTool:
             "Downstream tools should use the handle to page or re-use results. "
             "The input should be a valid MongoDB query object. "
             "For date filtering, use the 'initiated_at' field with $gte and $lt."
+            "For recipient name search, pass 'counterparty_name': '<name>' to match case-insensitive substrings in 'to_account.user_name'."
             ),  
         func=_mongo_query,
         args_schema=MongoQueryToolInput

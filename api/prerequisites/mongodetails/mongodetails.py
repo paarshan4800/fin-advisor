@@ -3,9 +3,9 @@ import json
 
 # --- Configuration ---
 MONGO_URI = "mongodb://localhost:27017"   # Change if needed
-DATABASE_NAME = "transaction_db"      # Replace with your DB name
-COLLECTIONS = ["accounts", "merchants", "transactions", "users"]  # Replace with your collections
-OUTPUT_FILE = "mongo_collections_details.txt"
+DATABASE_NAME = "transaction_db_flatten"      # Replace with your DB name
+COLLECTIONS = ["transactions", "users"]  # Replace with your collections
+OUTPUT_FILE = "mongo_collections_details_flatten.txt"
 
 # --- Connect to MongoDB ---
 client = MongoClient(MONGO_URI)

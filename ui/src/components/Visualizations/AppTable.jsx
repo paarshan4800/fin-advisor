@@ -13,7 +13,6 @@ import {
   Paper,
 } from "@mui/material";
 
-// Simple number formatter (customize currency/locale if needed)
 const formatNumber = (n) =>
   typeof n === "number"
     ? new Intl.NumberFormat(undefined, { maximumFractionDigits: 2 }).format(n)
@@ -22,7 +21,6 @@ const formatNumber = (n) =>
 function AppTable({ visualization }) {
   const { headers = [], rows = [], text_summary } = visualization;
 
-  // Infer which columns are numeric by checking the first non-null value in each column
   const numericCols = useMemo(() => {
     return headers.map((_, colIdx) => {
       const sample = rows.find(
@@ -32,16 +30,14 @@ function AppTable({ visualization }) {
     });
   }, [headers, rows]);
 
-  // Sorting state
-  const [orderBy, setOrderBy] = useState(0); // default: first column
-  const [order, setOrder] = useState("asc"); // 'asc' | 'desc'
+  const [orderBy, setOrderBy] = useState(0);
+  const [order, setOrder] = useState("asc");
 
   const sortedRows = useMemo(() => {
     const sorted = [...rows].sort((a, b) => {
       const va = a[orderBy];
       const vb = b[orderBy];
 
-      // Handle undefined/null consistently
       if (va == null && vb == null) return 0;
       if (va == null) return order === "asc" ? 1 : -1;
       if (vb == null) return order === "asc" ? -1 : 1;
@@ -49,7 +45,7 @@ function AppTable({ visualization }) {
       if (numericCols[orderBy]) {
         return order === "asc" ? va - vb : vb - va;
       }
-      // string compare
+
       const sa = String(va).toLowerCase();
       const sb = String(vb).toLowerCase();
       if (sa < sb) return order === "asc" ? -1 : 1;

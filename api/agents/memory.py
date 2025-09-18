@@ -6,14 +6,14 @@ from datetime import datetime
 logger = setup_logger(__name__)
 
 class ConversationMemory:
-    """Simple in-memory conversation storage"""
     
     def __init__(self, max_history: int = 10):
         self.max_history = max_history
         self.conversations: Dict[str, List[Dict[str, Any]]] = {}
     
     def add_interaction(self, session_id: str, user_input: str, assistant_response: str) -> None:
-        """Add user-assistant interaction to memory"""
+        
+        # If session_id doesnt exists, create new
         if session_id not in self.conversations:
             self.conversations[session_id] = []
         
@@ -23,6 +23,7 @@ class ConversationMemory:
             "timestamp": datetime.now().isoformat()
         }
         
+        # Add conversation
         self.conversations[session_id].append(interaction)
         
         # Keep only last N interactions
@@ -32,7 +33,8 @@ class ConversationMemory:
         logger.info(f"Added interaction to memory for session {session_id}")
     
     def get_context(self, session_id: str) -> List:
-        """Get conversation context for session"""
+        
+        # If no previous conversations
         if session_id not in self.conversations:
             return []
         
@@ -43,5 +45,4 @@ class ConversationMemory:
         
         return messages
 
-# Global memory instance
 conversation_memory = ConversationMemory()

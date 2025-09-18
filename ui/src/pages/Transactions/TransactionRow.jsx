@@ -54,7 +54,7 @@ function TransactionRow({ r }) {
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             {r.to_account && (
               <Typography variant="body2" sx={{ fontWeight: 600 }}>
-                {r.to_account.user.name}
+                {r.to_account.user_name}
               </Typography>
             )}
             {r.merchant && (

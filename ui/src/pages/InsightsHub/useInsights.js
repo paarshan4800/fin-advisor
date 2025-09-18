@@ -7,7 +7,7 @@ function useInsights() {
   const [insightsLoading, setinsightsLoading] = useState(false);
   const [insightsError, setinsightsError] = useState(null);
 
-  const INSIGHTS_URI = "/query";
+  const INSIGHTS_URI = "/insights/query";
 
   const { user } = useUser();
 

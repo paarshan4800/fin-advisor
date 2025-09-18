@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PromptInput from "./PromptInput";
 import { Box, Container, Stack, Button } from "@mui/material";
 import useInsights from "./useInsights";
@@ -8,9 +8,8 @@ import { MOCK_DATA } from "../../mock/dataSelector";
 
 function InsightsHub() {
   const { fetchInsights, insightsData, insightsLoading } = useInsights();
-  const [showResponse, setshowResponse] = useState(true);
-
-  const mockData = MOCK_DATA;
+  const [showResponse, setshowResponse] = useState(false);
+  const [userQuery, setuserQuery] = useState("");
 
   return (
     <Container
@@ -31,18 +30,20 @@ function InsightsHub() {
           }}
         >
           <PromptInput
-            onSubmit={() => {
+            onSubmit={(query) => {
+              setuserQuery(query);
+              fetchInsights(query);
               setshowResponse(true);
             }}
           />
         </Box>
       )}
 
-      {insightsLoading && <InsightsLoader query={mockData.data.query} />}
+      {insightsLoading && <InsightsLoader query={userQuery} />}
 
       {!insightsLoading && showResponse && (
         <Insights
-          data={mockData.data}
+          data={insightsData.data}
           onTryAnother={() => {
             setshowResponse(false);
           }}

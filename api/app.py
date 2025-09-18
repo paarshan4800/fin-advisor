@@ -12,10 +12,9 @@ import atexit
 logger = setup_logger(__name__)
 
 def create_app() -> Flask:
-    """Create and configure Flask application"""
     app = Flask(__name__)
     
-    # Enable CORS for all routes
+    # Enable CORS
     CORS(app)
     
     # Register blueprints
@@ -58,20 +57,6 @@ def create_app() -> Flask:
     @app.teardown_request
     def clear_user_id(exc):
         current_user_id.set(None)
-
-    # Root endpoint
-    @app.route('/')
-    def index():
-        return jsonify({
-            "service": "Personal Finance AI Assistant",
-            "version": "1.0.0",
-            "status": "running",
-            "endpoints": {
-                "query": "/api/query",
-                "health": "/api/health",
-                "memory": "/api/memory/<session_id>"
-            }
-        })
     
     # Initialize database connection
     try:
@@ -87,15 +72,7 @@ def create_app() -> Flask:
     return app
 
 if __name__ == '__main__':
-    # Validate settings
-    try:
-        settings.validate()
-        logger.info("Configuration validated successfully")
-    except ValueError as e:
-        logger.error(f"Configuration error: {e}")
-        exit(1)
     
-    # Create and run app
     app = create_app()
     logger.info(f"Starting Finance AI Assistant on port {settings.FLASK_PORT}")
     logger.info(f"Debug mode: {settings.FLASK_DEBUG}")

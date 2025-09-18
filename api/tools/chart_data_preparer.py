@@ -1,10 +1,10 @@
 from langchain.tools import StructuredTool
 from pydantic import BaseModel, Field, model_validator
-from typing import Dict, Any, List, Optional, Literal, Union
+from typing import Dict, Any, Optional
 from utils.logger import setup_logger
 from agents.llm import llm
 import json
-from utils.helper import _coerce_transactions, _load_data_from_handle, normalize_chart_result
+from utils.helper import _load_data_from_handle, normalize_chart_result
 from schemas.visualizations import VisualizationRouter
 
 logger = setup_logger(__name__)
@@ -90,7 +90,7 @@ def _prepare_chart_data(
         "- chart: { type: 'chart', chartType: 'pie'|'bar'|'line', data: [{label, value}], text_summary }\n"
         "- table: { type: 'table', headers: string[], rows: (string|number|boolean|null)[][], text_summary }\n\n"
         "TEXT SUMMARY RULE:\n"
-        "Always include a 'text_summary' that is 2–4 full sentences. "
+        "Always include a 'text_summary' that is 2-4 full sentences. "
         "It should summarize the main insight, highlight trends or patterns, "
         "and mention notable categories, time ranges, or outliers. "
         "Avoid single-word or vague summaries.\n"
@@ -117,7 +117,7 @@ def _prepare_chart_data(
         result = resp.visualization.model_dump()
         logger.debug(f"LLM raw response (chart prep): {result}")
 
-        # Minimal validation: ensure required top-level keys exist
+        # Validation
         if "type" not in result:
             raise ValueError("Missing 'type' in LLM response.")
         if result["type"] == "chart":
@@ -132,7 +132,6 @@ def _prepare_chart_data(
         if result.get("type") == "chart":
             result = normalize_chart_result(result, max_buckets=12)
 
-        # Always include a short text_summary to keep UX consistent
         if "text_summary" not in result:
             result["text_summary"] = "Prepared chart/table data."
 
@@ -140,7 +139,7 @@ def _prepare_chart_data(
 
     except Exception as e:
         logger.error(f"Chart data preparation failed: {e}")
-        # Fallback: return a very basic table so the app can still render something
+        # Fallback - failsafe
         headers = sorted({k for row in data for k in row.keys()}) if data else []
         rows = [[row.get(h) for h in headers] for row in data[:20]] if headers else []
 

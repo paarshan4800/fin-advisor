@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Settings:
-    """Application configuration settings"""
     
     # LLM Settings
     LLM_PROVIDER: str = os.getenv("LLM_PROVIDER", "openai")
@@ -15,6 +14,7 @@ class Settings:
     
     # Database Settings
     MONGO_URI: str = os.getenv("MONGO_URI", "mongodb://localhost:27017/finance_db")
+    LIMIT_FETCH_ROWS: int = int(os.getenv("LIMIT_FETCH_ROWS", 10))
     
     # Flask Settings
     FLASK_DEBUG: bool = os.getenv("FLASK_DEBUG", "True").lower() == "true"
@@ -30,11 +30,5 @@ class Settings:
     REDIS_PASSWORD=os.getenv("REDIS_PASSWORD")
     REDIS_TTL=os.getenv("REDIS_TTL", 300)
     REDIS_NAMESPACE=os.getenv("REDIS_NAMESPACE", "finance_agent")
-    
-    @classmethod
-    def validate(cls) -> None:
-        """Validate required settings"""
-        if cls.LLM_PROVIDER == "openai" and not cls.OPENAI_API_KEY:
-            raise ValueError("OPENAI_API_KEY is required when using OpenAI provider")
 
 settings = Settings()

@@ -13,14 +13,12 @@ from tools.mongo_projection_tool import get_mongo_projection_tool
 from agents.memory import conversation_memory
 from utils.logger import setup_logger
 from agents.llm import llm
-from utils.json_formatter import _finalize_json
 from utils.helper import enhance_response
 from agents.prompt import FINANCE_AGENT_SYSTEM_PROMPT
 
 logger = setup_logger(__name__)
 
 class FinanceAgent:
-    """Main AI agent for financial queries"""
     
     def __init__(self):
         self.llm = llm
@@ -37,7 +35,6 @@ class FinanceAgent:
         logger.info("Finance agent initialized successfully")
     
     def _get_tools(self) -> List:
-        """Get all available tools"""
         return [
             get_date_range_tool(),
             get_mongo_query_tool(),
@@ -48,7 +45,7 @@ class FinanceAgent:
         ]
     
     def _create_agent(self):
-        """Create the finance agent with tools"""
+        # Create the finance agent with tools
         system_prompt = FINANCE_AGENT_SYSTEM_PROMPT
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
@@ -72,7 +69,6 @@ class FinanceAgent:
 
     
     def process_query(self, user_input: str, session_id: str = "default") -> Dict[str, Any]:
-        """Process user financial query"""
         logger.info(f"Processing query: {user_input}")
         
         try:
@@ -87,14 +83,10 @@ class FinanceAgent:
 
             resp = enhance_response(result)
 
-            # raw_output = result.get("output")
-            # resp = _finalize_json(raw_output)
-
             # Store in memory
             if isinstance(resp, dict) and "visualization" in resp and "text_summary" in resp["visualization"]:
                 conversation_memory.add_interaction(session_id, user_input, resp["visualization"]["text_summary"])            
 
-            # logger.info(f"Query processed successfully: {resp["visualization"]['type']}")
             logger.info(f"Query processed successfully")
             return resp
             
@@ -103,7 +95,6 @@ class FinanceAgent:
             return self._error_response(str(e), user_input)
     
     def _error_response(self, error_message: str, user_input: str) -> Dict[str, Any]:
-        """Format error response"""
         return {
             "visualization": {
                 "type": "table",
@@ -116,5 +107,4 @@ class FinanceAgent:
             "error": True
         }
 
-# Global agent instance
 finance_agent = FinanceAgent()

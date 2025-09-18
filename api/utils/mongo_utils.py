@@ -2,7 +2,6 @@ from bson import ObjectId, Decimal128
 from datetime import datetime
 
 def serialize(doc):
-    """Convert Mongo types to JSON-safe values."""
     if isinstance(doc, ObjectId):
         return str(doc)
     if isinstance(doc, Decimal128):

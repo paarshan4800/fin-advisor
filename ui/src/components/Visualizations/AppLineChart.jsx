@@ -48,7 +48,6 @@ function AppLineChart({ visualization }) {
             <YAxis tick={{ fontSize: 12 }} />
             <Tooltip />
             <Legend />
-            {/* Single series: uses 'value' as Y, 'label' as X */}
             <Line
               type="monotone"
               dataKey="value"

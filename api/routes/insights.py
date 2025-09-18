@@ -3,6 +3,7 @@ from typing import Dict, Any
 from agents.finance_agent import finance_agent
 from utils.response_formatter import ResponseFormatter
 from utils.logger import setup_logger
+from agents.memory import conversation_memory
 
 logger = setup_logger(__name__)
 
@@ -10,7 +11,6 @@ insights_bp = Blueprint('insights', __name__)
 
 @insights_bp.route('/query', methods=['POST'])
 def process_financial_query() -> Dict[str, Any]:
-    """Process financial query endpoint"""
     try:
         # Validate request
         if not request.json:
@@ -49,10 +49,8 @@ def process_financial_query() -> Dict[str, Any]:
     
 @insights_bp.route('/memory/<session_id>', methods=['GET'])
 def get_conversation_history(session_id: str) -> Dict[str, Any]:
-    """Get conversation history for a session"""
     try:
-        from agents.memory import conversation_memory
-        
+        # Get conversation history for a session
         context = conversation_memory.get_context(session_id)
         
         if not context:
@@ -76,10 +74,8 @@ def get_conversation_history(session_id: str) -> Dict[str, Any]:
 
 @insights_bp.route('/memory/<session_id>', methods=['DELETE'])
 def clear_conversation_history(session_id: str) -> Dict[str, Any]:
-    """Clear conversation history for a session"""
     try:
-        from agents.memory import conversation_memory
-        
+        # Delete conversation history for a session
         if session_id in conversation_memory.conversations:
             del conversation_memory.conversations[session_id]
             logger.info(f"Cleared conversation history for session: {session_id}")

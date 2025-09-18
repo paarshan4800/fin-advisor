@@ -10,7 +10,6 @@ transactions_bp = Blueprint('transactions', __name__)
 
 @transactions_bp.route('/get', methods=['POST'])
 def transactions() -> Dict[str, Any]:
-    """Get transactions for the give criteria"""
     try:
         # Validate request
         if not request.json:

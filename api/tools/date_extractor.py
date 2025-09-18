@@ -4,6 +4,7 @@ from typing import Dict, Any, Optional
 from datetime import datetime
 from utils.logger import setup_logger
 from agents.llm import llm
+import json
 
 logger = setup_logger(__name__)
 
@@ -11,7 +12,7 @@ class DateRangeInput(BaseModel):
     query: str = Field(..., description="Natural-language query to extract a start and end date from")
 
 def _extract_date_range(query: str) -> Dict[str, Any]:
-    """Extract date range using LLM"""
+
     logger.info(f"Extracting date range from: {query}")
 
     today = datetime.now().strftime("%Y-%m-%d")
@@ -28,7 +29,6 @@ def _extract_date_range(query: str) -> Dict[str, Any]:
         logger.info(f"LLM raw response: {response.content}")
 
         # Try parsing the JSON response
-        import json
         result = json.loads(response.content)
 
         # Convert to ISO format with microseconds
@@ -54,7 +54,6 @@ def _extract_date_range(query: str) -> Dict[str, Any]:
         }
 
 def get_date_range_tool() -> StructuredTool:
-    """Create date range extraction tool"""
 
     return StructuredTool.from_function(
         name="date_range_extractor",

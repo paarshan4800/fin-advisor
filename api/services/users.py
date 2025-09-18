@@ -1,4 +1,3 @@
-# users.py
 from db.connection import mongo_conn
 from utils.logger import setup_logger
 from bson import ObjectId, Decimal128
@@ -8,7 +7,6 @@ from utils.mongo_utils import serialize
 logger = setup_logger(__name__)
 
 def get_all_users():
-    """Return all users from the users collection."""
     try:
         db = mongo_conn.connect()
         collection = db.users

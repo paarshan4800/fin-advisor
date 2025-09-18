@@ -133,7 +133,7 @@ export default function CurrentUserPicker({
             </Box>
           ) : (
             filtered.map((u) => {
-              const selected = u._id === currentUser._id;
+              const selected = u._id === currentUser?._id;
               return (
                 <ListItemButton
                   key={u._id}

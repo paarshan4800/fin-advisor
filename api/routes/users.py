@@ -10,7 +10,6 @@ users_bp = Blueprint('users', __name__)
 
 @users_bp.route('/all', methods=['GET'])
 def transactions() -> Dict[str, Any]:
-    """Get all users"""
     try:                           
         logger.info(f"Received request for get all users")
         

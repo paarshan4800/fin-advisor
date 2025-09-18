@@ -52,7 +52,7 @@ export default function TransactionsTable({ rows = [], totalRecords, fetchTransa
         <Table size="medium" aria-label="transactions table">
           <TableHead>
             <TableRow>
-              <TableCell /> {/* expander column */}
+              <TableCell /> 
               <TableCell>Date</TableCell>
               <TableCell>Recipient</TableCell>
               <TableCell>Mode</TableCell>

@@ -13,9 +13,24 @@ FIELD_WHITELIST: Set[str] = {
     "_id",
     "transaction_id",
     "user_id",
-    "from_account_id",
-    "to_account_id",
-    "merchant_id",
+
+    # embedded accounts
+    "from_account._id",
+    "from_account.user_id",
+    "from_account.user_name",
+    "from_account.account_number",
+    "to_account._id",
+    "to_account.user_id",
+    "to_account.user_name",
+    "to_account.account_number",
+
+    # embedded merchant
+    "merchant._id",
+    "merchant.name",
+    "merchant.type",
+    "merchant.category",
+
+    # core transaction fields
     "amount",
     "currency",
     "transaction_type",
@@ -36,7 +51,6 @@ allowed_fields_sorted = sorted(FIELD_WHITELIST)
 
 DEFAULT_INCLUDE: Set[str] = {"amount", "initiated_at"}
 
-# If you prefer excluding `_id` to reduce payload size, set this True.
 EXCLUDE_ID_BY_DEFAULT = False
 
 class ProjectionToolInput(BaseModel):
@@ -52,34 +66,44 @@ class ProjectionChoice(BaseModel):
     )
     reasoning: str = Field(..., description="Short explanation of why these fields are needed.")
 
-    # @validator("fields")
-    # def _dedupe_strip(cls, v):
-    #     seen = set()
-    #     out = []
-    #     for f in v:
-    #         if isinstance(f, str):
-    #             f2 = f.strip()
-    #             if f2 and f2 not in seen:
-    #                 seen.add(f2)
-    #                 out.append(f2)
-    #     if not out:
-    #         raise ValueError("No usable fields suggested.")
-    #     return out
-
 _parser = JsonOutputParser(pydantic_object=ProjectionChoice)
 
 examples = [
     (
         "Categorize my spendings in the last two months",
-        ["amount", "initiated_at", "transaction_type", "transaction_mode", "merchant_id", "description", "remarks", "currency"]
+        [
+            "amount",
+            "initiated_at",
+            "transaction_type",
+            "transaction_mode",
+            "merchant.category", 
+            "merchant.type",       
+            "description",
+            "remarks",
+            "currency",
+        ],
     ),
     (
         "Show failed transfers with reference numbers",
-        ["status", "initiated_at", "amount", "reference_number", "transaction_mode", "transaction_type"]
+        [
+            "status",
+            "initiated_at",
+            "amount",
+            "reference_number",
+            "transaction_mode",
+            "transaction_type",
+            "to_account.account_number",
+        ],
     ),
     (
         "Find big cash withdrawals",
-        ["amount", "initiated_at", "transaction_mode", "transaction_type", "remarks"]
+        [
+            "amount",
+            "initiated_at",
+            "transaction_mode",
+            "transaction_type",
+            "remarks",
+        ],
     ),
 ]
 
@@ -110,10 +134,7 @@ _prompt = ChatPromptTemplate.from_messages(
 )
 
 def _generate_mongo_projection(query: str) -> Dict[str, Any]:
-    """
-    Use LLM to propose a minimal set of fields for the projection, then sanitize against a whitelist.
-    Returns a dict that you can pass to MongoDB find(..., projection=...).
-    """
+    
     logger.info(f"[mongo_projection_tool] Building projection for query: {query}")
 
     try:
@@ -179,14 +200,6 @@ def _generate_mongo_projection(query: str) -> Dict[str, Any]:
     
 
 def get_mongo_projection_tool() -> StructuredTool:
-    """
-    Returns a sanitized MongoDB projection dict based on the user's query.
-
-    NOTE: This tool does *not* build filters. It only returns a projection to
-    minimize fetched fields. Use another tool in your pipeline to build filters
-    (e.g., date ranges) and to actually query Mongo.
-    """
-
     return StructuredTool.from_function(
         name="mongo_projection_tool",
         description=(

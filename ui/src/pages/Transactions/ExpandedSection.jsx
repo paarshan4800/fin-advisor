@@ -21,7 +21,7 @@ function ExpandedSection({ r, open }) {
     },
     {
       label: "Merchant Type",
-      value: `${r.merchant.category} - ${r.merchant.type}`,
+      value: `${r?.merchant?.category} - ${r?.merchant?.type}`,
     },
     {
       label: "Date/Time",
@@ -43,7 +43,7 @@ function ExpandedSection({ r, open }) {
     },
   ];
 
-  const isMerchantTransaction = r.to_account_id === null;
+  const isMerchantTransaction = r.to_account === null;
 
   return (
     <TableRow>

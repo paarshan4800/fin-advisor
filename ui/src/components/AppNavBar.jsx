@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
 import { SavingsOutlined } from "@mui/icons-material";
 import { Link } from "react-router-dom";
@@ -7,6 +7,10 @@ import { useUser } from "../context/UserContext";
 
 const AppNavBar = ({ usersData }) => {
   const { user, setUser } = useUser();
+
+  useEffect(() => {
+    setUser(usersData[0]);
+  }, [usersData]);
 
   return (
     <AppBar position="static" color="transparent" elevation={0}>
@@ -23,7 +27,7 @@ const AppNavBar = ({ usersData }) => {
         >
           <SavingsOutlined sx={{ mr: 1 }} />
           <Typography variant="h6" sx={{ fontWeight: 600 }}>
-            SpendSmart
+            FinAdvisor
           </Typography>
         </Box>
 

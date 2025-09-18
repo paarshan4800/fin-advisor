@@ -2,8 +2,8 @@ from config.settings import settings
 from langchain_openai import ChatOpenAI
 from langchain_ollama import ChatOllama
 
+# Initialize LLM based on configuration
 def get_llm():
-    """Initialize LLM based on configuration"""
     if settings.LLM_PROVIDER == "openai":
         return ChatOpenAI(
             model="gpt-4o-mini",

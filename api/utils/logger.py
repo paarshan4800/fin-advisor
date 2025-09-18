@@ -3,7 +3,6 @@ import sys
 from config.settings import settings
 
 def setup_logger(name: str) -> logging.Logger:
-    """Setup logger with consistent formatting"""
     logger = logging.getLogger(name)
     
     if not logger.handlers:

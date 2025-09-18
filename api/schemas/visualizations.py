@@ -40,5 +40,4 @@ class TableResult(BaseModel):
 ChartOrTableResult = Union[PieResult, BarResult, LineResult, TableResult]
 
 class VisualizationRouter(BaseModel):
-    """Container for a single chart or table."""
     visualization: ChartOrTableResult = Field(..., description="The single chart or table object to be rendered.")
